@@ -19,19 +19,6 @@
 </body>
 </html>
 
-<!-- resources/views/profil.blade.php -->
-@extends('layouts.app')
-
-@section('content')
-    <div class="container mx-auto">
-        <h1 class="text-3xl font-semibold">Profil Pengguna</h1>
-        <p>Nama Pengguna: {{ $user->name }}</p>
-        <p>Email: {{ $user->email }}</p>
-        <p>kata sandi: {{$user->password_get_info}}</p>
-        <p>foto : {{$user->img}}</p>
-    </div>
-@endsection
-
 <!-- resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
@@ -51,6 +38,27 @@
     <ul>
         <li><a href="/">Beranda</a></li>
         <li><a href="/profile">Profil</a></li>
+        @extends('layouts.app')
+
+@section('content')
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-semibold">Profil Pengguna</h1>
+        <p>Nama Pengguna: {{ $user->name }}</p>
+        <p>Email: {{ $user->email }}</p>
+        <!-- Tambahkan informasi profil lainnya -->
+        <div class="mt-4">
+            <h2 class="text-xl font-semibold">Informasi Tambahan</h2>
+            <ul>
+                <li><strong>Foto:</strong> {{-- Tampilkan foto pengguna --}}</li>
+                <li><strong>Alamat:</strong> {{ $user->address }}</li>
+                <li><strong>Nomor Telepon:</strong> {{ $user->phone }}</li>
+                {{-- Anda mungkin juga ingin menambahkan tombol untuk mengubah kata sandi --}}
+                {{-- <li><strong>Kata Sandi:</strong> ******** <a href="{{ route('password.edit') }}">Ubah</a></li> --}}
+            </ul>
+        </div>
+    </div>
+@endsection
+
     </ul>
 </nav>
 
@@ -65,8 +73,17 @@
             <h1 class="text-3xl font-semibold">Profil Pengguna</h1>
             <p>Nama Pengguna: {{ $user->name }}</p>
             <p>Email: {{ $user->email }}</p>
-            <p>kata sandi: {{$user->password_get_info}}</p>
-            <p>foto : {{$user->img}}</p>
+             <!-- Tambahkan informasi profil lainnya -->
+        <div class="mt-4">
+            <h2 class="text-xl font-semibold">Informasi Tambahan</h2>
+            <ul>
+                <li><strong>Foto:</strong> {{-- Tampilkan foto pengguna --}}</li>
+                <li><strong>Alamat:</strong> {{ $user->address }}</li>
+                <li><strong>Nomor Telepon:</strong> {{ $user->phone }}</li>
+                {{-- Anda mungkin juga ingin menambahkan tombol untuk mengubah kata sandi --}}
+                {{-- <li><strong>Kata Sandi:</strong> ******** <a href="{{ route('password.edit') }}">Ubah</a></li> --}}
+            </ul>
+        </div>
         </div>
         @endsection
 
