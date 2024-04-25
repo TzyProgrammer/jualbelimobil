@@ -9,3 +9,11 @@ Route::get('/welcome', function () {
 Route::get('/dashboardproduk', function () {
     return view('dashboard_produk');
 });
+
+Route::get('/dashboardpesanan', function () {
+    return view('dashboard_pesanan');
+});
+
+Route::get('/dashboardstatistik', function () {
+    return view('dashboard_statistik');
+});
