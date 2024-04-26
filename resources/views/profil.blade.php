@@ -90,7 +90,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Aplikasi Saya. All rights reserved.</p>
+        <p>&copy; 2024 jual beli mobil. All rights reserved.</p>
     </footer>
 </body>
 </html>
