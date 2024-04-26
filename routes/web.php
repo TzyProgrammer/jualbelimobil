@@ -17,4 +17,3 @@ Route::get('/dashboardpesanan', function () {
 Route::get('/dashboardstatistik', function () {
     return view('dashboard_statistik');
 });
-Route::get('/profile', 'ProfileController@show')->name('profile.show');
