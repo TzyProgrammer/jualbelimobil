@@ -53,21 +53,22 @@
         <div class="flex justify-around items-end p-5">
           <div class="space-y-8 ">
             <div>
-              <p class="text-5xl">Nama Mobil</p>
-              <p class="text-2xl">Deskripsi</p>
+              <p class="text-5xl">BMW X5 (2010)</p>
+              <p class="text-2xl">BMW X5 3.0 Bensin-AT 2010 Abu-Abu</p>
             </div>
             <div class="space-y-5" >
               <p class="text-4xl">Estimasi Pengantaran</p>
-              <p class="text-2xl">Deskripsi</p>
-              <p class="text-2xl">Deskripsi</p>
-              <p class="text-2xl">Deskripsi</p>
-              <p class="text-2xl">Deskripsi</p>
+              <p class="text-2xl">Total Harga</p>
+              <p class="text-2xl">Pengambilan</p>
+              <p class="text-2xl">Metode Pembayaran</p>
+              <p class="text-2xl">Alamat Pengantaran</p>
             </div>
           </div>
 
           <div
             class="border border-black m-5"
             style="width: 452px; height: 250px"
+            img src ="bmw.png"
           ></div>
         </div>
       </div>
