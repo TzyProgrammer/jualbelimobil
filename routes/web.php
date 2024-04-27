@@ -17,3 +17,11 @@ Route::get('/dashboardpesanan', function () {
 Route::get('/dashboardstatistik', function () {
     return view('dashboard_statistik');
 });
+
+Route::get('/profil', function () {
+    return view('profil');
+});
+
+Route::get('/ubahprofil', function () {
+    return view('ubah_profil');
+});
