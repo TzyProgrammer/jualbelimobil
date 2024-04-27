@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubah Profil</title>
+    <title> Profil</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -65,7 +65,7 @@
             </a>
   
             <h1 class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-              ubah foto
+              profil
             </h1>
   
             
