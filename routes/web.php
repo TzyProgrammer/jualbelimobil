@@ -49,3 +49,7 @@ Route::get('/login', function () {
 Route::get('/katalog', function () {
     return view('katalog');
 });
+
+Route::get('/resi', function () {
+    return view('resi');
+});
