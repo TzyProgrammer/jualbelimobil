@@ -25,3 +25,11 @@ Route::get('/profil', function () {
 Route::get('/ubahprofil', function () {
     return view('ubah_profil');
 });
+
+Route::get('/detailproduk', function () {
+    return view('detail_produk');
+});
+
+Route::get('/favorite', function () {
+    return view('favorite');
+});
