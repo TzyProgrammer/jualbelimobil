@@ -10,7 +10,7 @@
   <section class="bg-red-900 dark:bg-red-900">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-      <img class="mx-auto my-auto" src="image/logo.png" alt="logo" width="200" >
+      <img class="mx-auto my-auto" src="images/logo.png" alt="logo" width="200" >
 
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
               <form class="space-y-4 md:space-y-6" action="#">
