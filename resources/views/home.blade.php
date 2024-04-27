@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
 <div id="newsletter-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
-    <img src="/logokecil.png" alt="logo" width="150" >
+    <img src="image/logokecil.png" alt="logo" width="150" >
     <div class="flex items-center max-w-96 mx-auto">
     <!-- Input search -->
     <input class="bg-red-50 border border-gray-300 rounded-lg py-2 px-4 w-80 text-gray-700  focus:outline-none focus:shadow-outline" id="search" type="text" placeholder="Search">
@@ -20,8 +20,8 @@
         </svg>
     </button>
 </div>
-    <img class="w-8 h-8 ml-2 my-10" src="/love.png" alt="icon">   
-    <img class="w-8 h-8 ml-2 my-10" src="/akun.png" alt="icon">
+    <img class="w-8 h-8 ml-2 my-10" src="image/love.png" alt="icon">   
+    <img class="w-8 h-8 ml-2 my-10" src="image/akun.png" alt="icon">
 </div>
 
     <img class="flex w-full" src="/familycar.jpg" alt="page">
@@ -44,12 +44,12 @@
 
     <div class="flex flex-row items-center justify-center my-20">
         <div class="container px-16 flex justify-between">
-        <a href=""><img src="/logo_hyundai.png" alt="Logo Hyundai" class="w-16"></a>
-        <a href=""><img src="/logo_nissan.png" alt="Logo Nissan" class="w-16"></a>
-        <a href=""><img src="/logo_honda.png" alt="Logo Honda" class="w-16"></a>
-        <a href=""><img src="/logo_suzuki.png" alt="Logo Suzuki" class="w-16"></a>
-        <a href=""><img src="/logo_bmw.png" alt="Logo BMW" class="w-16"></a>
-        <a href=""><img src="/logo_chevrolet.png" alt="Logo Chevrolet" class="w-16"></a>
+        <a href=""><img src="image/logo_hyundai.png" alt="Logo Hyundai" class="w-16"></a>
+        <a href=""><img src="image/logo_nissan.png" alt="Logo Nissan" class="w-16"></a>
+        <a href=""><img src="image/logo_honda.png" alt="Logo Honda" class="w-16"></a>
+        <a href=""><img src="image/logo_suzuki.png" alt="Logo Suzuki" class="w-16"></a>
+        <a href=""><img src="image/logo_bmw.png" alt="Logo BMW" class="w-16"></a>
+        <a href=""><img src="image/logo_chevrolet.png" alt="Logo Chevrolet" class="w-16"></a>
         </div>
     </div>
     
@@ -57,7 +57,7 @@
     <div class="flex flex-row items-center justify-center my-20 bg-red-900">
             <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <img class="rounded-t-lg" src="/bmw.png" alt="" />
+                    <img class="rounded-t-lg" src="image/bmw.png" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -82,7 +82,7 @@
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="/logokecil.png" width="70" alt="Logo" />
+                <img src="image/logokecil.png" width="70" alt="Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
