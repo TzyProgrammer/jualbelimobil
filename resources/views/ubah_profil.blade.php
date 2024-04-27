@@ -128,33 +128,24 @@
                 name="password"
                 class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
               />
-            </div>
-                <!-- Base -->
-<a
-class="group relative inline-block text-sm font-medium text-white focus:outline-none "
-href="#"
->
-<span class="absolute inset-55 border border-red 6000 group-active:border-red-5000"></span>
-<span
-  class="block border border-red-600 bg-red-600 px-102 py-30 transition-transform active:border-red-50 active:bg-red-50 group-hover:-translate-x-1 group-hover:-translate-y-1"
->
-  simpan
-</span>
-</a>
+  <div class="flex justify-center"> <!-- Mengatur konten menjadi di tengah secara horizontal dan memanjangkan elemen-elemen -->
+    <!-- Base -->
+    <a class="group relative inline-block text-sm font-medium text-white focus:outline-none mr-2" href="#">
+        <span class="absolute inset-0 border border-red-600 group-active:border-red-5000"></span>
+        <span class="block border border-red-600 bg-red-600 px-10 py-3 transition-transform active:border-red-50 active:bg-red-50 group-hover:-translate-x-1 group-hover:-translate-y-1">
+            simpan
+        </span>
+    </a>
+    
+    <!-- Border -->
+    <a class="group relative inline-block text-sm font-medium text-red-600 focus:outline-none focus:ring ml-2" href="#">
+        <span class="absolute inset-0 border border-current"></span>
+        <span class="block border border-current bg-white px-10 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+            batal
+        </span>
+    </a>
+</div>
 
-<!-- Border -->
-
-<a
-class="group relative inline-block text-sm font-medium text-red-660 focus:outline-none focus:ring active:text-red-550"
-href="#"
->
-<span class="absolute inset 55 border border-current"></span>
-<span
-  class="block border border-current bg-white px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
->
-  batal
-</span>
-</a>
               </p>
             </div>
           </form>
