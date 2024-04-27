@@ -33,3 +33,15 @@ Route::get('/detailproduk', function () {
 Route::get('/favorite', function () {
     return view('favorite');
 });
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/daftar', function () {
+    return view('daftar');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});

@@ -25,9 +25,9 @@
                     Mobil
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Mobil
+                    Harga
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 text-center">
                     Jenis Pengambilan
                 </th>
                 <th scope="col" class="px-6 py-3">
@@ -52,8 +52,8 @@
                     Rp. 2.067.000.000,00
                 </td>
                 <td class="px-6 py-4 text-right flex">
-                <a href="#" class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:focus:ring-blue-900">Buy now</a>
-                <a href="#" class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:focus:ring-blue-900">Buy now</a>
+                <a href="#" class="text-black block w-full bg-red-700 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Delivery</a>
+                <a href="#" class="text-black block w-full bg-gray-200 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Pickup</a>
                 </td>
                 <td class="px-6 py-4">
                     Sedang Diantar
@@ -76,8 +76,8 @@
                     Rp. 243.100.000,00
                 </td>
                 <td class="px-6 py-4 text-right flex">
-                <a href="#" class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:focus:ring-blue-900">Buy now</a>
-                <a href="#" class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:focus:ring-blue-900">Buy now</a>
+                <a href="#" class="text-black block w-full bg-red-700 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Delivery</a>
+                <a href="#" class="text-black block w-full bg-gray-200 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Pickup</a>
                 </td>
                 <td class="px-6 py-4">
                     Sedang Diantar
@@ -100,8 +100,8 @@
                     Rp. 69.000.000,00
                 </td>
                 <td class="px-6 py-4 text-right flex">
-                <a href="#" class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:focus:ring-blue-900">Buy now</a>
-                <a href="#" class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:focus:ring-blue-900">Buy now</a>
+                <a href="#" class="text-black block w-full bg-gray-200 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Delivery</a>
+                <a href="#" class="text-black block w-full bg-red-700 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Pickup</a>
                 </td>
                 <td class="px-6 py-4">
                     Menunggu Untuk Diambil
