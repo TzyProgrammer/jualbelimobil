@@ -2,57 +2,111 @@
 
 @section('title', 'Dashboard Pesanan')
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orderan</title>
-</head>
-<body class="bg-gray-100">
-    <div class="overflow-x-auto">
-      <table class="table-auto w-full">
-        <thead>
-          <tr>
-            <th class="px-4 py-2">Nomor orderan</th>
-            <th class="px-4 py-2">Tanggal</th>
-            <th class="px-4 py-2">Username</th>
-            <th class="px-4 py-2">Mobil</th>
-            <th class="px-4 py-2">Harga</th>
-            <th class="px-4 py-2">Jenis Pengambilan</th>
-            <th class="px-4 py-2">Status</th>
-          </tr>
+@section('judul', 'PESANAN')
+
+@section('content')
+
+
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Nomor Orderan
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Tanggal
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Username
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Mobil
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Mobil
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Jenis Pengambilan
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Status
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="border px-4 py-2">1</td>
-            <td class="border px-4 py-2">01/04/2024</td>
-            <td class="border px-4 py-2">Asadika</td>
-            <td class="border px-4 py-2">BMW X6</td>
-            <td class="border px-4 py-2"></td>
-            <td class="border px-4 py-2 text-red-500 font-bold">Delivery</td>
-            <td class="border px-4 py-2"></td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">2</td>
-            <td class="border px-4 py-2">07/04/2024</td>
-            <td class="border px-4 py-2">Kmuna23</td>
-            <td class="border px-4 py-2">Brio RS</td>
-            <td class="border px-4 py-2"></td>
-            <td class="border px-4 py-2 text-red-500 font-bold">Delivery</td>
-            <td class="border px-4 py-2"></td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">3</td>
-            <td class="border px-4 py-2">19/04/2024</td>
-            <td class="border px-4 py-2">Dewo_L</td>
-            <td class="border px-4 py-2">Nissan MARCH</td>
-            <td class="border px-4 py-2"></td>
-            <td class="border px-4 py-2 text-green-500 font-bold">Pickup</td>
-            <td class="border px-4 py-2"></td>
-          </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="px-6 py-4">
+                    1
+                </td>
+                <td class="px-6 py-4">
+                    01/04/24
+                </td>
+                <td class="px-6 py-4">
+                    Asadika
+                </td>
+                <td class="px-6 py-4">
+                    BMW X6
+                </td>
+                <td class="px-6 py-4">
+                    Rp. 2.067.000.000,00
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                </td>
+                <td class="px-6 py-4">
+                    Sedang Diantar
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="px-6 py-4">
+                    2
+                </td>
+                <td class="px-6 py-4">
+                    07/04/2024
+                </td>
+                <td class="px-6 py-4">
+                    Kmuna23
+                </td>
+                <td class="px-6 py-4">
+                    Brio RS
+                </td>
+                <td class="px-6 py-4">
+                    Rp. 243.100.000,00
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                </td>
+                <td class="px-6 py-4">
+                    Sedang Diantar
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="px-6 py-4">
+                    3
+                </td>
+                <td class="px-6 py-4">
+                    19/04/2024
+                </td>
+                <td class="px-6 py-4">
+                    Dewo_L
+                </td>
+                <td class="px-6 py-4">
+                    Nissan MARCH
+                </td>
+                <td class="px-6 py-4">
+                    Rp. 69.000.000,00
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                </td>
+                <td class="px-6 py-4">
+                    Menunggu Untuk Diambil
+                </td>
+            </tr>
         </tbody>
-      </table>
-    </div>
-</body>
-</html>
+    </table>
+</div>
+
+
+@endsection

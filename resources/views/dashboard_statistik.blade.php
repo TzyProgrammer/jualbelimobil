@@ -2,6 +2,10 @@
 
 @section('title', 'Dashboard Statistik')
 
+@section('judul', 'STATISTIK')
+
+@section('content')
+
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 <div class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
@@ -86,3 +90,4 @@
     </div>
 </div>
 
+@endsection
