@@ -67,11 +67,6 @@
             <h1 class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
               ubah foto
             </h1>
-  
-            <p class="mt-4 leading-relaxed text-gray-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam dolorum aliquam,
-              quibusdam aperiam voluptatum.
-            </p>
           </div>
   
           <form action="#" class="mt-8 grid grid-cols-6 gap-6">
