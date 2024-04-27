@@ -10,9 +10,9 @@
     <h2 class="font-medium text-xl">KATEGORI</h2>
     <div class="container px-16 flex justify-between">
         <img src="images/logo_hyundai.png" alt="Logo Hyundai" class="w-16">
-        <img src="images/logo_nissan.png" alt="Logo Nissan" class="w-16">
+        <img src="images/logo_nissan2.png" alt="Logo Nissan" class="w-16">
         <img src="images/logo_honda.png" alt="Logo Honda" class="w-16">
-        <img src="images/logo_suzuki.png" alt="Logo Suzuki" class="w-16">
+        <img src="images/logo_suzuki2.png" alt="Logo Suzuki" class="w-16">
         <img src="images/logo_bmw.png" alt="Logo BMW" class="w-16">
         <img src="images/logo_chevrolet.png" alt="Logo Chevrolet" class="w-16">
     </div>

@@ -45,3 +45,7 @@ Route::get('/daftar', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/katalog', function () {
+    return view('katalog');
+});

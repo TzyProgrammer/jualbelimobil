@@ -8,7 +8,7 @@
  <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-100 dark:bg-gray-800">
        <a href="" class="flex items-center justify-center ps-2.5">
-          <img src="images/logo.png" class="h-20 me-3 sm:h-20" alt="Logo" />
+          <img src="images/logokecil.png" class="h-20 me-3 sm:h-20" alt="Logo" />
         </a>
         <span class="flex self-center justify-center text-xl font-semibold whitespace-nowrap dark:text-white mb-10 text-red-600">Dashboard</span>
        <ul class="space-y-2 font-medium">
@@ -45,7 +45,7 @@
           </li>
          </ul>
          <div class="font-medium">
-            <a href="#" class="flex items-center justify-center p-2 me-4 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="/login" class="flex items-center justify-center p-2 me-4 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <svg class="w-6 h-6 text-gray-800 dark:text-white rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2"/>
                  </svg>
