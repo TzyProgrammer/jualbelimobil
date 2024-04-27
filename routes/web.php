@@ -53,3 +53,7 @@ Route::get('/katalog', function () {
 Route::get('/resi', function () {
     return view('resi');
 });
+
+Route::get('/checkout', function () {
+    return view('checkout');
+});
