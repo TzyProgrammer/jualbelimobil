@@ -1,3 +1,9 @@
+@extends('layout.main')
+
+@section('title', 'Ubah Profil')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,3 +161,5 @@
   </section>
 </body>
 </html>
+
+@endsection

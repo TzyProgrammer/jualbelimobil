@@ -1,3 +1,9 @@
+@extends('layout.main')
+
+@section('title', 'Favorite')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,3 +25,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>
+
+@endsection

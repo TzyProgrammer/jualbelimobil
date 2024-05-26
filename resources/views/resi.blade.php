@@ -1,6 +1,8 @@
-<div>
-  <!-- Do what you can, with what you have, where you are. - Theodore Roosevelt -->
-</div>
+@extends('layout.main')
+
+@section('title', 'Resi')
+
+@section('content')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,3 +75,5 @@
   </main>
 </body>
 </html>
+
+@endsection
