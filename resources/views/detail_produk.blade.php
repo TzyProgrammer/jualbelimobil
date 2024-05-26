@@ -30,7 +30,7 @@
               Plat : Ganjil / Genap<br />
               Warna : Abu-Abu
           </p>
-         <p class="ps-8 font-bold mt-8 text-3xl">
+         <p class="ps-8 font-black mt-8 text-3xl">
           Rp. 1.945.000.000,00  
          </p>
          <div class="flex flex-row ps-8 mt-20 mb-20">
