@@ -20,7 +20,7 @@
       </div>
       <div class="">
           <p class="text-xl ps-8 leading-7">
-              <span class="font-semibold"
+              <span class="font-bold"
                   >BMW X5 3.0 Bensin-AT 2010 Abu-Abu</span>
               STNK dan BPKB asli & sesuai*<br />
               Pajak : 2024-07-01<br />
