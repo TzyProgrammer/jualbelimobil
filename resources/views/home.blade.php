@@ -50,7 +50,8 @@
         <a href=""><img src="images/logo_suzuki.png" alt="Logo Suzuki" class="w-16"></a>
         <a href=""><img src="images/logo_bmw.png" alt="Logo BMW" class="w-16"></a>
         <a href=""><img src="images/logo_chevrolet.png" alt="Logo Chevrolet" class="w-16"></a>
-        </div>
+    
+    |   </div>
     </div>
     
 
