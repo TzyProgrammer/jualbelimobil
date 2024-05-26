@@ -7,8 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   
-  <section class="bg-red-900 dark:bg-red-900">
-  <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+  <section class=" bg-red-900 dark:bg-red-900">
+    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 ">
       <img class="mx-auto my-auto mt-6" src="images/logo.png" alt="logo" width="150" >
 
@@ -16,7 +16,7 @@
               <form class="space-y-4 md:space-y-4" action="#">
               <div>
                       <label for="username" class="block mb-2 text-sm font-medium text-gray-900">Username</label>
-                      <input type="username" name="username" id="username" class="bg-red-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="name@company.com" required="">
+                      <input type="username" name="username" id="username" class="bg-red-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Masukkan username " required="">
                   </div>
                   <div>
                       <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
