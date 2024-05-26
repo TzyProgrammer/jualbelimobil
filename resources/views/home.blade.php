@@ -1,12 +1,9 @@
 @extends('layout.main')
 
-@section('title', 'Katalog')
+@section('title', 'home')
 
 @section('content')
 
-
-  <title>Home</title>
-  <script src="https://cdn.tailwindcss.com"></script>
 
 
     <img class="flex w-full" src="images/carhome.jpg" alt="page">
@@ -29,17 +26,6 @@
 </div>
     
 
-    <div class="flex flex-row items-center justify-center my-20 " >
-    <button type="button" class="focus:outline-none text-black bg-white-0 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2">Hatchback</button>
-    <button type="button" class="focus:outline-none text-black bg-white-0 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2">MPV</button>
-    <button type="button" class="focus:outline-none text-black bg-white-0 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2">SUV</button>
-    <button type="button" class="focus:outline-none text-black bg-white-0 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-lg px-5 lg-2.5 me-2 mb-2">Sedan</button>
-    <button type="button" class="focus:outline-none text-black bg-white-0 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2">Wagon</button>
-    <button type="button" class="focus:outline-none text-black bg-white-0 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2">Coupe</button>
-    <button type="button" class="focus:outline-none text-black bg-white-0 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2">Van</button>
-    <button type="button" class="focus:outline-none text-black bg-white-0 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2">Sport</button>
-    </div>
-
     <div class="flex flex-row items-center justify-center my-20 space-x-2">
         <div class="container px-16 flex justify-between ">
         <a href=""><img src="images/logo_hyundai.png" alt="Logo Hyundai" class="w-16"></a>
@@ -53,7 +39,7 @@
     </div>
     
 
-    <div class="flex flex-row items-center justify-center my-20 bg-red-900 space-x-4">
+    <div class="flex flex-row items-center justify-center my-20 bg-red-900 space-x-4 px-4">
             <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
                 <a href="#">
                     <img class="rounded-t-lg" src="images/bmw-3.png" alt="" />
@@ -104,10 +90,29 @@
                         </svg>
                     </a>
                 </div> 
-            </div>            
+            </div>
+            <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
+                <a href="#">
+                    <img class="rounded-t-lg" src="images/bmw -m.png" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">BMW M Series</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-200 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Rp. 2.987.897.900,00
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div> 
+            </div>                  
     </div>
 
 
 
 </div>
+
+@endsection
 
