@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
-    <title>Document</title>
-</head>
-<body>
+@extends('layout.main')
+
+@section('title', 'Detail Produk')
+
+@section('content')
+
 <div class="p-6 bg-white">
   <h1 class="text-4xl mb-16 mt-4">Nama Mobil</h1>
    <div class="bg-white p-2">
@@ -32,6 +28,5 @@
     Beli
   </button>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-</body>
-</html>
+
+@endsection

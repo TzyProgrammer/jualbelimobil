@@ -1,58 +1,19 @@
-<div>
-    <!-- The whole future lies in uncertainty: live immediately. - Seneca -->
-</div>
+@extends('layout.main')
+
+@section('title', 'Checkout')
+
+@section('content')
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        />
-
-        <link
-            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
         <title>Invoice Pembeli</title>
     </head>
     <body>
-        <!-- navbar  -->
-        <div
-            id="newsletter-banner"
-            tabindex="-1"
-            class="fixed items-center top-0 start-0 z-50 flex justify-between w-full p-4 border-b border-gray-500 bg-gray-200 dark:bg-gray-700 dark:border-gray-600"
-        >
-            <img
-                src="public/images/carsFIVE no bg 4.png"
-                alt="logo"
-                width="262"
-            />
-            <div class="flex items-center" style="width: 153px; height: 73px">
-                <img
-                    class="w-14 h-14 ml-2 my-10"
-                    src="public/images/love.png"
-                    alt="icon"
-                />
-                <img
-                    class="w-16 h-16 ml-2 my-10"
-                    src="public/images/user_552721 1.png"
-                    alt="icon"
-                />
-            </div>
-        </div>
-        <header>
-            <div
-                class="flex items-start justify-between w-full p-6 px-16 mt-40"
-            >
-                <i class="fas fa-arrow-left"></i>
-                <p class="text-5xl">CHECKOUT</p>
-                <p class="text-2xl">Home</p>
-            </div>
-        </header>
-        <main>
             <!-- card  -->
             <div class="flex-col flex p-16 justify-around mt-14 md:flex-row">
                 <div class="mb-10">
@@ -175,41 +136,8 @@
                 </button>
             </div>
         </main>
-        <footer>
-            <div
-                class="w-full bg-gray-200 flex justify-between p-16"
-                style="height: 311px"
-            >
-                <div class="space-y-5">
-                    <div class="flex gap-5 items-center">
-                        <img
-                            src="public/images/location_1483285 2.png"
-                            alt=""
-                        />
-                        <p class="text-2xl">Find our location (For Pick Up)</p>
-                    </div>
-                    <p class="text-2xl">
-                        Jl. Ahmad Yani, Tlk. Tering, Kec. Batam Kota, <br />
-                        Kota Batam, Kepulauan Riau 29461
-                    </p>
-                </div>
-                <div class="flex items-start">
-                  <div class="flex gap-5 items-center">
-
-                    <div>
-                      <img
-                          src="public/images/old-typical-phone_13936 2.png"
-                          alt=""
-                      />
-                    </div>
-                      <div>
-                          <p class="text-2xl">097 - 8654 - 3296</p>
-                          <p class="text-2xl">0855 - 3465 - 7765</p>
-                      </div>
-                  </div>
-                  </div>
-            </div>
-        </footer>
     </body>
 </html>
+
+@endsection
 

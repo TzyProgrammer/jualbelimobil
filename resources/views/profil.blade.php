@@ -1,3 +1,9 @@
+@extends('layout.main')
+
+@section('title', 'Profil')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,3 +127,5 @@
   </section>
 </body>
 </html>
+
+@endsection
