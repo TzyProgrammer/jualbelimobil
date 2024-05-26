@@ -1,23 +1,11 @@
 @extends('layout.dashboard')
 
-@section('title', 'Dashboard Produk')
+@section('title', 'Dashboard Tambah Produk')
 
 @section('judul', 'PRODUK')
 
 @section('content')
 
-
-
-<div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-    <ul class="flex flex-wrap -mb-px">
-        <li class="me-2">
-            <a href="#" class="inline-block p-4 text-red-600 border-b-2 border-red-600 rounded-t-lg active dark:text-red-500 dark:border-red-500" aria-current="page">Produk</a>
-        </li>
-        <li class="me-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Merek</a>
-        </li>
-    </ul>
-</div>
 <div class="flex py-5 items-center">
     <h2 class="font-medium text-xl">KATEGORI</h2>
     <div class="container px-16 flex justify-between">
