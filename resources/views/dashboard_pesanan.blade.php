@@ -27,6 +27,9 @@
                 <th scope="col" class="px-6 py-3">
                     Harga
                 </th>
+                <th scope="col" class="px-6 py-3">
+                    Alamat
+                </th>
                 <th scope="col" class="px-6 py-3 text-center">
                     Jenis Pengambilan
                 </th>
@@ -51,12 +54,22 @@
                 <td class="px-6 py-4">
                     Rp. 2.067.000.000,00
                 </td>
+                <td class="px-6 py-4">
+                    Lokasi 1
+                </td>
                 <td class="px-6 py-4 text-right flex">
-                <a href="#" class="text-black block w-full bg-red-700 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Delivery</a>
+                <a href="#" class="text-black block w-full bg-green-400 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Delivery</a>
                 <a href="#" class="text-black block w-full bg-gray-200 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Pickup</a>
                 </td>
                 <td class="px-6 py-4">
-                    Sedang Diantar
+                    <form>
+                        <select name="" id="">
+                            <option value="">Menunggu</option>
+                            <option value="">Dibatalkan</option>
+                            <option value="">Dikirim</option>
+                            <option value="">Selesai</option>
+                        </select>
+                    </form>
                 </td>
             </tr>
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -75,12 +88,22 @@
                 <td class="px-6 py-4">
                     Rp. 243.100.000,00
                 </td>
+                <td class="px-6 py-4">
+                    Lokasi 2
+                </td>
                 <td class="px-6 py-4 text-right flex">
-                <a href="#" class="text-black block w-full bg-red-700 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Delivery</a>
+                <a href="#" class="text-black block w-full bg-green-400 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Delivery</a>
                 <a href="#" class="text-black block w-full bg-gray-200 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Pickup</a>
                 </td>
                 <td class="px-6 py-4">
-                    Sedang Diantar
+                    <form>
+                        <select name="" id="">
+                            <option value="">Menunggu</option>
+                            <option value="">Dibatalkan</option>
+                            <option value="">Dikirim</option>
+                            <option value="">Selesai</option>
+                        </select>
+                    </form>
                 </td>
             </tr>
             <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -99,12 +122,22 @@
                 <td class="px-6 py-4">
                     Rp. 69.000.000,00
                 </td>
+                <td class="px-6 py-4">
+                    Lokasi 3
+                </td>
                 <td class="px-6 py-4 text-right flex">
                 <a href="#" class="text-black block w-full bg-gray-200 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Delivery</a>
-                <a href="#" class="text-black block w-full bg-red-700 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Pickup</a>
+                <a href="#" class="text-black block w-full bg-green-400 font-medium text-sm px-4 py-2.5 text-center ml-1 mr-1">Pickup</a>
                 </td>
                 <td class="px-6 py-4">
-                    Menunggu Untuk Diambil
+                    <form>
+                        <select name="" id="">
+                            <option value="">Menunggu</option>
+                            <option value="">Dibatalkan</option>
+                            <option value="">Dikirim</option>
+                            <option value="">Selesai</option>
+                        </select>
+                    </form>
                 </td>
             </tr>
         </tbody>
