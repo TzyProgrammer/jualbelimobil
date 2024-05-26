@@ -1,4 +1,4 @@
-<nav class="relative">
+<nav class="relative z-50">
     <div class="fixed top-0 left-0 right-0 bg-gray-100 px-6 py-1 flex justify-between items-center">
         <a href="/home">
             <img src="images/logokecil.png" alt="Logo" class="w-32">
