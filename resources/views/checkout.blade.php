@@ -4,7 +4,7 @@
 
 @section('content')
 
-<p class="text-center text-3xl">CHECKOUT</p>
+<p class="text-center font-semibold text-3xl">CHECKOUT</p>
             <div class="flex-col flex p-16 justify-around mt-14 md:flex-row">
                 <div class="mb-10">
                     <img src="images/bmw-3.png" width="663px" height="409.8px"/>
