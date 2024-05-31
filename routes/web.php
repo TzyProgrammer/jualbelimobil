@@ -27,6 +27,10 @@ Route::get('/dashboardtambahproduk', function () {
     return view('dashboard_tambah_produk');
 });
 
+Route::get('/dashboardlihatproduk', function () {
+    return view('dashboard_lihat_produk');
+});
+
 Route::get('/dashboardubahproduk', function () {
     return view('dashboard_ubah_produk');
 });
