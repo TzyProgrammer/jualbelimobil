@@ -23,6 +23,14 @@ Route::get('/dashboardproduk', function () {
     return view('dashboard_produk');
 });
 
+Route::get('/dashboardtambahproduk', function () {
+    return view('dashboard_tambah_produk');
+});
+
+Route::get('/dashboardubahproduk', function () {
+    return view('dashboard_ubah_produk');
+});
+
 Route::get('/dashboardpesanan', function () {
     return view('dashboard_pesanan');
 });

@@ -18,12 +18,12 @@
         </li>
     </ul>
 </div>
-<button type="button" class="mt-4 px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+<a href="dashboardtambahproduk" role="button" class="mt-4 px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
     <svg class="w-4 h-4 mr-1 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
       </svg>      
     <span>Tambah Produk</span>
-</button>
+</a>
 <div class="flex pt-2 pb-5 items-center">
     <h2 class="font-medium text-xl">KATEGORI</h2>
     <div class="container px-16 flex justify-between">

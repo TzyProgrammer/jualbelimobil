@@ -1,6 +1,6 @@
 @extends('layout.dashboard')
 
-@section('title', 'Dashboard Tambah Produk')
+@section('title', 'Dashboard Ubah Produk')
 
 @section('judul', 'PRODUK')
 
@@ -11,19 +11,19 @@
         <tr>
             <td class="p-1.5"><label for="nama">Nama Mobil</label></td>
             <td class="p-1.5">:</td>
-            <td class="p-1.5"><input type="text" id="nama" class="border-transparent rounded-md"></td>
+            <td class="p-1.5"><input type="text" id="nama" class="border-transparent rounded-md" value="BMW M2 C"></td>
         </tr>
         <tr>
             <td class="p-1.5"><label for="merek">Merek</label></td>
             <td class="p-1.5">:</td>
             <td class="p-1.5">
                 <select id="merek" class="border-transparent rounded-md p-2">
-                    <option value="Pilih Merek" selected>Pilih Merek</option>
+                    <option value="Pilih Merek">Pilih Merek</option>
                     <option value="Hyundai">Hyundai</option>
                     <option value="Nissan">Nissan</option>
                     <option value="Honda">Honda</option>
                     <option value="Suzuki">Suzuki</option>
-                    <option value="BMW">BMW</option>
+                    <option value="BMW" selected>BMW</option>
                     <option value="Chevrolet">Chevrolet</option>
                 </select>
             </td>
@@ -31,12 +31,12 @@
         <tr>
             <td class="p-1.5"><label for="harga">Harga</label></td>
             <td class="p-1.5">:</td>
-            <td class="p-1.5"><input type="number" id="harga" class="border-transparent rounded-md" min="0"></td>
+            <td class="p-1.5"><input type="number" id="harga" class="border-transparent rounded-md" min="0" value="1558000000"></td>
         </tr>
         <tr>
             <td class="p-1.5"><label for="deskripsi">Deskripsi</label></td>
             <td class="p-1.5">:</td>
-            <td class="p-1.5"><textarea id="deskripsi" cols="60" rows="4" class="border-transparent rounded-md p-2"></textarea></td>
+            <td class="p-1.5"><textarea id="deskripsi" cols="60" rows="4" class="border-transparent rounded-md p-2">Stok Terbatas!!!</textarea></td>
         </tr>
         <tr>
             <td class="p-1.5"><label for="gambar">Gambar</label></td>
@@ -45,7 +45,7 @@
         </tr>
     </table>
     <div class="flex justify-end space-x-3">
-        <button type="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 rounded-lg text-center">Tambah</button>
+        <button type="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 rounded-lg text-center">Simpan</button>
         <a href="dashboardproduk" role="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white rounded-lg text-center border">Batal</a>
     </div>
 </div>
