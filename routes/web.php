@@ -83,6 +83,10 @@ Route::get('/katalog', function () {
     return view('katalog');
 });
 
+Route::get('/pesanan', function () {
+    return view('pesanan');
+});
+
 Route::get('/resi', function () {
     return view('resi');
 });
