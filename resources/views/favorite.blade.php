@@ -4,7 +4,7 @@
 
 @section('content')
 
-<p class="text-center mb-20 font-semibold text-3xl">FAVORITE</p>
+<p class="text-center mb-20 font-semibold text-3xl">FAVORIT</p>
 
     <div class="w-full flex flex-row bg-gray-300 my-5">
     <div class= "basis-1/2  mx-10 my-8"> <img src="images/bmw -m.png" class=" w-72 " > </div>
