@@ -14,7 +14,7 @@
        <ul class="space-y-2 font-medium">
           <li>
              <a href="/dashboardproduk" class="flex items-center justify-center p-2 text-gray-900 dark:text-white group">
-                <button type="button" class="bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">
+                <button type="button" class="bg-gray-300 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 w-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5"/>
                       </svg>                      
@@ -24,7 +24,7 @@
           </li>
           <li>
              <a href="/dashboardstatistik" class="flex items-center justify-center p-2 text-gray-900 dark:text-white group">
-                <button type="button" class="bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">
+                <button type="button" class="bg-gray-300 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 w-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v15a1 1 0 0 0 1 1h15M8 16l2.5-5.5 3 3L17.273 7 20 9.667"/>
                       </svg>                                            
@@ -34,7 +34,7 @@
           </li>
           <li>
              <a href="/dashboardpesanan" class="flex items-center justify-center p-2 text-gray-900 dark:text-white group">
-                <button type="button" class="bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">
+                <button type="button" class="bg-gray-300 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 w-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-6 5h6m-6 4h6M10 3v4h4V3h-4Z"/>
                       </svg>
