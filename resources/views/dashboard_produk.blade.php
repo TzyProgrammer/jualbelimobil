@@ -212,49 +212,49 @@
                     <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
                     <div class="flex justify-between">
                         <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
+                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
                     </div>
                 </div>
                 <div class="mx-6 grid justify-items-stretch">
                     <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
                     <div class="flex justify-between">
                         <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
+                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
                     </div>
                 </div>
                 <div class="mx-6 grid justify-items-stretch">
                     <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
                     <div class="flex justify-between">
                         <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
+                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
                     </div>
                 </div>
                 <div class="mx-6 grid justify-items-stretch">
                     <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
                     <div class="flex justify-between">
                         <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
+                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
                     </div>
                 </div>
                 <div class="mx-6 grid justify-items-stretch">
                     <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
                     <div class="flex justify-between">
                         <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
+                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
                     </div>
                 </div>
                 <div class="mx-6 grid justify-items-stretch">
                     <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
                     <div class="flex justify-between">
                         <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
+                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
                     </div>
                 </div>
                 <div class="mx-6 grid justify-items-stretch">
                     <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
                     <div class="flex justify-between">
                         <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
+                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
                     </div>
                 </div>
             </div>
