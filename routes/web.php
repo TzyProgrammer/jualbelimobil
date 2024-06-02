@@ -35,6 +35,14 @@ Route::get('/dashboardubahproduk', function () {
     return view('dashboard_ubah_produk');
 });
 
+Route::get('/dashboardtambahmerek', function () {
+    return view('dashboard_tambah_merek');
+});
+
+Route::get('/dashboardubahmerek', function () {
+    return view('dashboard_ubah_merek');
+});
+
 Route::get('/dashboardpesanan', function () {
     return view('dashboard_pesanan');
 });
