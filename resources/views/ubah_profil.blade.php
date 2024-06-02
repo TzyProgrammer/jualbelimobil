@@ -33,7 +33,7 @@
   </div>
 
   <div>
-    <button type="submit" a href="/ubahprofil" class="mb-40 mr-8 w-44 text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center">Simpan</button>
+    <button type="submit"class="mb-40 mr-8 w-44 text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center">Simpan</button>
 
     <a href="/profil" class=" text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-16 py-2.5 text-center">batal</a>
 
