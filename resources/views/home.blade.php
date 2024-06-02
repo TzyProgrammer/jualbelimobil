@@ -28,12 +28,12 @@
 
     <div class="flex flex-row items-center justify-center my-20 space-x-2">
         <div class="container px-16 flex justify-between ">
-        <a href=""><img src="images/logo_hyundai.png" alt="Logo Hyundai" class="w-16"></a>
-        <a href=""><img src="images/logo_nissan.png" alt="Logo Nissan" class="w-16"></a>
-        <a href=""><img src="images/logo_honda.png" alt="Logo Honda" class="w-16"></a>
-        <a href=""><img src="images/logo_suzuki.png" alt="Logo Suzuki" class="w-16"></a>
-        <a href=""><img src="images/logo_bmw.png" alt="Logo BMW" class="w-16"></a>
-        <a href=""><img src="images/logo_chevrolet.png" alt="Logo Chevrolet" class="w-16"></a>
+        <a href=""><img src="images/logo_hyundai.png" alt="Logo Hyundai" class="w-16 my-8"></a>
+        <a href=""><img src="images/logo_nissan.png" alt="Logo Nissan" class="w-16 my-8"></a>
+        <a href=""><img src="images/logo_honda.png" alt="Logo Honda" class="w-16 my-8"></a>
+        <a href=""><img src="images/logo_suzuki.png" alt="Logo Suzuki" class="w-16 my-8"></a>
+        <a href=""><img src="images/logo_bmw.png" alt="Logo BMW" class="w-16 my-8"></a>
+        <a href=""><img src="images/logo_chevrolet.png" alt="Logo Chevrolet" class="w-16 my-8"></a>
     
     </div>
     </div>
@@ -42,7 +42,7 @@
     <div class="flex flex-row items-center justify-center my-20 bg-red-900 space-x-4 px-4">
             <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
                 <a href="#">
-                    <img class="rounded-t-lg" src="images/bmw-3.png" alt="" />
+                    <img class="w-64 rounded-t-lg my-8 mx-8" src="images/bmw-3.png" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -59,7 +59,7 @@
             </div> 
             <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
                 <a href="#">
-                    <img class="rounded-t-lg" src="images/bmw-3.png" alt="" />
+                    <img class="w-64 rounded-t-lg my-8 mx-8" src="images/bmw-3.png" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -76,7 +76,7 @@
             </div>
             <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
                 <a href="#">
-                    <img class="rounded-t-lg" src="images/bmw-3.png" alt="" />
+                    <img class="w-64 rounded-t-lg my-8 mx-8" src="images/bmw-3.png" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -93,7 +93,7 @@
             </div>
             <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
                 <a href="#">
-                    <img class="rounded-t-lg" src="images/bmw -m.png" alt="" />
+                    <img class="w-64 rounded-t-lg my-8 mx-8" src="images/bmw -m.png" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
