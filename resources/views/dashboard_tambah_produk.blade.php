@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="bg-gray-100 dark:bg-gray-800 p-4">
+<div class="bg-gray-100 p-4">
     <table>
         <tr>
             <td class="p-1.5"><label for="nama">Nama Mobil</label></td>
