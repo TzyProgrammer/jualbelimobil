@@ -33,7 +33,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -49,7 +49,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -65,7 +65,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -81,7 +81,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -97,7 +97,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -113,7 +113,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -129,7 +129,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -145,7 +145,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -161,7 +161,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -177,7 +177,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -193,7 +193,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>
@@ -209,7 +209,7 @@
         <div class="bg-white rounded-lg">
             <a href="/detailproduk">
                 <div class="bg-gray-300 rounded-t-lg flex justify-center">
-                    <img src="images/mobil.png" alt="Mobil" class="w-72">
+                    <img src="images/mobil.png" alt="Mobil" class="w-72 my-8">
                 </div>
                 <div class="flex justify-between items-center p-2">
                     <p class="text-2xl font-medium">Kijang Innova</p>

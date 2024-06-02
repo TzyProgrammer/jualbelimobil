@@ -9,8 +9,8 @@
     <div class="bg-rose-50 p-3">
         <p class="text-red-700 font-medium text-end">Status Pesanan : Selesai</p>
         <div class="flex">
-            <img src="/images/mobil.png" alt="Mobil" class="w-96">
-            <div class="my-4 ml-20">
+            <img src="/images/mobil.png" alt="Mobil" class="w-96 mr-20 my-auto">
+            <div>
                 <p class="text-4xl font-bold">BMW X5 (2010)</p>
                 <table>
                     <tr>
@@ -32,8 +32,8 @@
     <div class="bg-rose-50 p-3">
         <p class="text-red-700 font-medium text-end">Status Pesanan : Sedang dikirim</p>
         <div class="flex">
-            <img src="/images/mobil.png" alt="Mobil" class="w-96">
-            <div class="my-4 ml-20">
+            <img src="/images/mobil.png" alt="Mobil" class="w-96 mr-20 my-auto">
+            <div>
                 <p class="text-4xl font-bold">BMW X5 (2010)</p>
                 <table>
                     <tr>
