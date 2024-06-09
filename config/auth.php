@@ -9,11 +9,11 @@ return [
     ],
     'pembeli' => [
         'driver' => 'session',
-        'provider' => 'pembelis',
+        'provider' => 'pembeli',
     ],
     'penjual' => [
         'driver' => 'session',
-        'provider' => 'penjuals',
+        'provider' => 'penjual',
     ],
 ],
 
@@ -22,11 +22,11 @@ return [
         'driver' => 'eloquent',
         'model' => App\Models\User::class,
     ],
-    'pembelis' => [
+    'pembeli' => [
         'driver' => 'eloquent',
         'model' => App\Models\Pembeli::class,
     ],
-    'penjuals' => [
+    'penjual' => [
         'driver' => 'eloquent',
         'model' => App\Models\Penjual::class,
     ],

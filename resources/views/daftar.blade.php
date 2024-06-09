@@ -22,6 +22,7 @@
     @endif
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
               <form class="space-y-2 md:space-y-2" method="POST" action="{{ route('daftar') }}">
+                @csrf
               <div>
                       <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
                       <input type="text" name="username" id="username" class="bg-red-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Masukkan Username" required="">

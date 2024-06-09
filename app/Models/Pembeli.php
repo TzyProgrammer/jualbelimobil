@@ -8,6 +8,7 @@ class Pembeli extends Authenticatable
 {
     protected $table = 'pembeli';
     protected $primaryKey = 'id_pembeli';
-    protected $fillable = ['username', 'password', 'nama_pembeli', 'nomor_hp'];
+    protected $fillable = ['username', 'password', 'nama_pembeli', 'nomor_hp', 'alamat'];
     protected $hidden = ['password'];
+    public $timestamps = false;
 }

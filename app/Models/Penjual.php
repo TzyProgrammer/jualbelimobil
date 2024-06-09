@@ -10,5 +10,6 @@ class Penjual extends Authenticatable
     protected $primaryKey = 'id_penjual';
     protected $fillable = ['username', 'password'];
     protected $hidden = ['password'];
+    public $timestamps = false;
 }
 
