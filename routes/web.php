@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CheckoutController;
-use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\DashboardProdukController;
 use App\Http\Controllers\DashboardPesananController;
 use App\Http\Controllers\DashboardStatistikController;
@@ -10,10 +9,27 @@ use App\Http\Controllers\DetailProdukController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KatalogController;
-use App\Http\Controllers\LoginController;
+
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ResiController;
 use App\Http\Controllers\UbahProfilController;
+
+use App\Http\Controllers\LoginController;
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+
+use App\Http\Controllers\DaftarController;
+Route::get('/daftar', [DaftarController::class, 'showDaftarForm'])->name('daftar');
+Route::post('/daftar', [DaftarController::class, 'daftar'])->name('daftar');
+
+Route::get('/home', function () {
+    return "Home - Pembeli";
+})->name('home');
+
+Route::get('/dashboardproduk', function () {
+    return "Dashboard Produk - Penjual";
+})->name('dashboardproduk');
+
 
 Route::get('/welcome', function () {
     return view('welcome');
