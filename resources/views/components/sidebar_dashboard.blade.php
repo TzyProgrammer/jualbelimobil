@@ -8,7 +8,7 @@
  <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
     <div class="relative h-full px-3 py-4 overflow-y-auto bg-gray-100">
        <a href="" class="flex items-center justify-center ps-2.5">
-          <img src="images/logokecil.png" class="h-20 me-3 sm:h-20" alt="Logo" />
+          <img src="/images/logokecil.png" class="h-20 me-3 sm:h-20" alt="Logo" />
         </a>
         <span class="flex self-center justify-center text-xl font-semibold whitespace-nowrap mb-10 text-red-600">Dashboard</span>
        <ul class="space-y-2 font-medium">

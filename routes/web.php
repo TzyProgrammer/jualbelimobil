@@ -35,9 +35,9 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/dashboardproduk', function () {
-    return view('dashboard_produk');
-});
+Route::get('/dashboardproduk', [DashboardProdukController::class, 'lihatMerek']);
+
+Route::delete('/dashboardproduk/{kode_merek}', [DashboardProdukController::class, 'hapusMerek'])->name('merek.hapus');
 
 Route::get('/dashboardtambahproduk', function () {
     return view('dashboard_tambah_produk');
@@ -55,9 +55,11 @@ Route::get('/dashboardtambahmerek', function () {
     return view('dashboard_tambah_merek');
 });
 
-Route::get('/dashboardubahmerek', function () {
-    return view('dashboard_ubah_merek');
-});
+Route::post('/dashboardtambahmerek', [DashboardProdukController::class, 'tambahMerek'])->name('merek.tambah');
+
+Route::get('/dashboardubahmerek/{kode_merek}', [DashboardProdukController::class, 'ambilDataMerek']);
+
+Route::post('/dashboardubahmerek', [DashboardProdukController::class, 'ubahMerek'])->name('merek.ubah');
 
 Route::get('/dashboardpesanan', function () {
     return view('dashboard_pesanan');

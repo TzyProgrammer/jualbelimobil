@@ -193,7 +193,7 @@
         </div>
     </div>
     <div class="hidden rounded-lg" id="merek" role="tabpanel" aria-labelledby="merek-tab">
-        <a href="dashboardtambahmerek" role="button" class="mt-4 px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">
+        <a href="/dashboardtambahmerek" role="button" class="mt-4 px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">
             <svg class="w-4 h-4 mr-1 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
               </svg>      
@@ -201,95 +201,52 @@
         </a>
         <div class="mt-5">
             <div class="grid grid-cols-4 gap-8">
-                <div class="mx-6 grid justify-items-stretch">
-                    <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
-                    <div class="flex justify-between">
-                        <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
+                @foreach ($data_merek as $data)
+                <form method="POST" action="{{ route('merek.hapus', $data->kode_merek) }}">
+                    @csrf
+                    @method('DELETE')
+                    <div class="mx-6 grid justify-items-stretch">
+                        <img src="/images/merek/{{ $data->gambar }}" alt="Logo" class="w-24 justify-self-center">
+                        <p class="my-4">Merek: <span class="font-bold">{{ $data->merek }}</span></p>
+                        <div class="flex justify-between">
+                            <a href="/dashboardubahmerek/{{ $data->kode_merek }}" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center self-center">Ubah</a>
+                            <button data-modal-target="merek-modal-{{ $data->kode_merek }}" data-modal-toggle="merek-modal-{{ $data->kode_merek }}" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center self-center">Hapus</button>
+                        </div>
                     </div>
-                </div>
-                <div class="mx-6 grid justify-items-stretch">
-                    <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
-                    <div class="flex justify-between">
-                        <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
-                    </div>
-                </div>
-                <div class="mx-6 grid justify-items-stretch">
-                    <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
-                    <div class="flex justify-between">
-                        <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
-                    </div>
-                </div>
-                <div class="mx-6 grid justify-items-stretch">
-                    <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
-                    <div class="flex justify-between">
-                        <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
-                    </div>
-                </div>
-                <div class="mx-6 grid justify-items-stretch">
-                    <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
-                    <div class="flex justify-between">
-                        <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
-                    </div>
-                </div>
-                <div class="mx-6 grid justify-items-stretch">
-                    <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
-                    <div class="flex justify-between">
-                        <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
-                    </div>
-                </div>
-                <div class="mx-6 grid justify-items-stretch">
-                    <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
-                    <div class="flex justify-between">
-                        <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
-                    </div>
-                </div>
-                <div class="mx-6 grid justify-items-stretch">
-                    <img src="/images/logo_hyundai.png" alt="Logo" class="w-24 justify-self-center">
-                    <div class="flex justify-between">
-                        <a href="/dashboardubahmerek" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">Ubah</a>
-                        <button data-modal-target="merek-modal" data-modal-toggle="merek-modal" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center">Hapus</button>
-                    </div>
-                </div>
-            </div>
 
-            <div id="merek-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative p-4 w-full max-w-2xl max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                            <h3 class="text-xl font-semibold text-gray-900">
-                                Konfirmasi Penghapusan Merek
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="merek-modal">
-                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                                </svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-4 md:p-5 space-y-4">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                Apakah Anda yakin ingin menghapus Merek Hyundai?
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="merek-modal" type="button" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Setuju</button>
-                            <button data-modal-hide="merek-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-red-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Batal</button>
+                    <div id="merek-modal-{{ $data->kode_merek }}" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-white rounded-lg shadow">
+                                <!-- Modal header -->
+                                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                                    <h3 class="text-xl font-semibold text-gray-900">
+                                        Konfirmasi Penghapusan Merek
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="merek-modal-{{ $data->kode_merek }}">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <p class="text-base leading-relaxed text-gray-500">
+                                        Apakah Anda yakin ingin menghapus Merek {{ $data->merek }}?
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                                    <button data-modal-hide="merek-modal-{{ $data->kode_merek }}" type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Setuju</button>
+                                    <button data-modal-hide="merek-modal-{{ $data->kode_merek }}" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-red-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Batal</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
+                @endforeach
             </div>
-
         </div>
     </div>
 </div>
