@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Mobil extends Model
 {
     use HasFactory;
-    protected $table='mobil';
-    public $timestamps='false';
+    protected $table = 'mobil';
+    protected $fillable = ['nama_mobil', 'kode_merek', 'harga_mobil', 'gambar_mobil', 'deskripsi_mobil'];
+    protected $guarded = ['kode_mobil'];
+    public $timestamps = false;
 }

@@ -39,9 +39,9 @@ Route::get('/dashboardproduk', [DashboardProdukController::class, 'lihatMerek'])
 
 Route::delete('/dashboardproduk/{kode_merek}', [DashboardProdukController::class, 'hapusMerek'])->name('merek.hapus');
 
-Route::get('/dashboardtambahproduk', function () {
-    return view('dashboard_tambah_produk');
-});
+Route::get('/dashboardtambahproduk', [DashboardProdukController::class, 'pilihanMerek']);
+
+Route::post('/dashboardtambahproduk', [DashboardProdukController::class, 'tambahProduk'])->name('produk.tambah');
 
 Route::get('/dashboardlihatproduk', function () {
     return view('dashboard_lihat_produk');
