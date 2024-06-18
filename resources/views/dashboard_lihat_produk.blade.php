@@ -19,28 +19,28 @@
         <tr>
             <td class="p-1.5 text-nowrap">Nama Mobil</td>
             <td class="p-1.5">:</td>
-            <td class="p-1.5">BMW M2 C</td>
+            <td class="p-1.5">{{ $nama_mobil }}</td>
         </tr>
         <tr>
             <td class="p-1.5">Merek</td>
             <td class="p-1.5">:</td>
-            <td class="p-1.5">BMW</td>
+            <td class="p-1.5">{{ $merek }}</td>
         </tr>
         <tr>
             <td class="p-1.5">Harga</td>
             <td class="p-1.5">:</td>
-            <td class="p-1.5">Rp 1.558.000.000</td>
+            <td class="p-1.5">{{ $harga_mobil }}</td>
         </tr>
         <tr>
             <td class="p-1.5">Deskripsi</td>
             <td class="p-1.5">:</td>
-            <td class="p-1.5">Stok Terbatas!!!</td>
+            <td class="p-1.5">{{ $deskripsi_mobil }}</td>
         </tr>
         <tr>
             <td class="p-1.5">Gambar</td>
             <td class="p-1.5">:</td>
             <td class="p-1.5">
-                <img src="/images/bmw-3.png" alt="Gambar Mobil" class="w-2/3">
+                <img src="/images/produk/{{ $gambar_mobil }}" alt="Gambar Mobil" class="w-2/3">
             </td>
         </tr>
     </table>

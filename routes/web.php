@@ -35,7 +35,7 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/dashboardproduk', [DashboardProdukController::class, 'lihatMerek']);
+Route::get('/dashboardproduk', [DashboardProdukController::class, 'lihat']);
 
 Route::delete('/dashboardproduk/{kode_merek}', [DashboardProdukController::class, 'hapusMerek'])->name('merek.hapus');
 
@@ -43,17 +43,13 @@ Route::get('/dashboardtambahproduk', [DashboardProdukController::class, 'pilihan
 
 Route::post('/dashboardtambahproduk', [DashboardProdukController::class, 'tambahProduk'])->name('produk.tambah');
 
-Route::get('/dashboardlihatproduk', function () {
-    return view('dashboard_lihat_produk');
-});
+Route::get('/dashboardlihatproduk/{kode_mobil}', [DashboardProdukController::class, 'lihatProduk']);
 
-Route::get('/dashboardubahproduk', function () {
-    return view('dashboard_ubah_produk');
-});
+Route::get('/dashboardubahproduk/{kode_mobil}', [DashboardProdukController::class, 'ambilDataProduk']);
 
-Route::get('/dashboardtambahmerek', function () {
-    return view('dashboard_tambah_merek');
-});
+Route::post('/dashboardubahproduk', [DashboardProdukController::class, 'ubahProduk'])->name('produk.ubah');
+
+Route::get('/dashboardtambahmerek', [DashboardProdukController::class, 'dashboardTambahMerek']);
 
 Route::post('/dashboardtambahmerek', [DashboardProdukController::class, 'tambahMerek'])->name('merek.tambah');
 
