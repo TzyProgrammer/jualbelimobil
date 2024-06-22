@@ -28,7 +28,7 @@ class DashboardProdukController extends Controller
         $merek = $request->input('merek');
 
         if ($merek == 'Pilih Merek') {
-            return redirect('/dashboard/produk/tambah')->with('error', 'PILIH MEREK!');
+            return redirect()->back()->with('error', 'PILIH MEREK!');
         } else {
             $data_merek = MerekMobil::where('merek', $merek)->first();
             $kode_merek = $data_merek->kode_merek;
@@ -133,23 +133,30 @@ class DashboardProdukController extends Controller
 
     public function tambahMerek(Request $request)
     {
-        $request->validate([
-            // 'merek' => 'required|string|max:255',
-            'gambar' => 'required|image|mimes:jpeg,png,jpg|max:2048',
-        ]);
+        $merek = $request->input('merek');
+        $data = MerekMobil::where('merek', $merek)->first();
 
-        if ($request->hasFile('gambar')) {
-            $gambar = $request->file('gambar');
-            $nama_gambar = time().'.'.$gambar->getClientOriginalExtension();
-            $tempat = public_path('/images/merek');
-            $gambar->move($tempat, $nama_gambar);
+        if ($data) {
+            return redirect()->back()->with('error', 'MEREK SUDAH ADA!');
+        } else {
+            $request->validate([
+                'merek' => 'required|max:30',
+                'gambar' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            ]);
 
-            $merekmobil = new MerekMobil;
-            $merekmobil->merek = $request->input('merek');
-            $merekmobil->gambar = $nama_gambar;
-            $merekmobil->save();
-
-            return redirect('/dashboard/produk');
+            if ($request->hasFile('gambar')) {
+                $gambar = $request->file('gambar');
+                $nama_gambar = time().'.'.$gambar->getClientOriginalExtension();
+                $tempat = public_path('/images/merek');
+                $gambar->move($tempat, $nama_gambar);
+    
+                $merekmobil = new MerekMobil;
+                $merekmobil->merek = $merek;
+                $merekmobil->gambar = $nama_gambar;
+                $merekmobil->save();
+    
+                return redirect('/dashboard/produk');
+            }
         }
     }
 
@@ -158,54 +165,118 @@ class DashboardProdukController extends Controller
         $data = MerekMobil::where('kode_merek', $kode_merek)->first();
         $merek = $data->merek;
 
+        $data_untuk_ubahMerek = $merek;
+
+        session(['data_untuk_ubahMerek' => $data_untuk_ubahMerek]);
+
         return view('/dashboard_ubah_merek', compact('kode_merek', 'merek'));
     }
 
     public function ubahMerek(Request $request)
     {
-        $kode_merek = $request->input('kode_merek');
-        $data = MerekMobil::where('kode_merek', $kode_merek)->first();
+        $merek = $request->input('merek');
+        $data_untuk_ubahMerek = session('data_untuk_ubahMerek');
 
-        $nama_gambar = $data->gambar;
+        $data_merek = MerekMobil::where('merek', $merek)->first();
+        // $data_lama = MerekMobil::where('merek', '!=', $data_untuk_ubahMerek)->first();
+        // $data_baru = MerekMobil::where('merek', $merek)->first();
 
-        if ($request->hasFile('gambar')) {
-
-            if ($data->gambar) {
-                $gambar_lama = public_path('/images/merek/' . $data->gambar);
-
-                if (file_exists($gambar_lama)) {
-                    unlink($gambar_lama);
+        if ($data_merek) {
+            if ($data_merek->merek !== $data_untuk_ubahMerek) {
+                return redirect()->back()->with('error', 'MEREK SUDAH ADA!');
+            } else {
+                $request->validate([
+                    'merek' => 'required|max:30',
+                    'gambar' => 'image|mimes:jpeg,png,jpg|max:2048',
+                ]);
+    
+                $kode_merek = $request->input('kode_merek');
+                $data = MerekMobil::where('kode_merek', $kode_merek)->first();
+    
+                $nama_gambar = $data->gambar;
+    
+                if ($request->hasFile('gambar')) {
+    
+                    if ($data->gambar) {
+                        $gambar_lama = public_path('/images/merek/' . $data->gambar);
+    
+                        if (file_exists($gambar_lama)) {
+                            unlink($gambar_lama);
+                        }
+                    }
+    
+                    $gambar = $request->file('gambar');
+                    $nama_gambar = time().'.'.$gambar->getClientOriginalExtension();
+                    $tempat = public_path('/images/merek');
+                    $gambar->move($tempat, $nama_gambar);
                 }
+    
+                MerekMobil::where('kode_merek', $kode_merek)->update([
+                    'merek' => $merek,
+                    'gambar' => $nama_gambar,
+                ]);
+    
+                return redirect('/dashboard/produk');
+            }
+        } else {
+            $request->validate([
+                'merek' => 'required|max:30',
+                'gambar' => 'image|mimes:jpeg,png,jpg|max:2048',
+            ]);
+
+            $kode_merek = $request->input('kode_merek');
+            $data = MerekMobil::where('kode_merek', $kode_merek)->first();
+
+            $nama_gambar = $data->gambar;
+
+            if ($request->hasFile('gambar')) {
+
+                if ($data->gambar) {
+                    $gambar_lama = public_path('/images/merek/' . $data->gambar);
+
+                    if (file_exists($gambar_lama)) {
+                        unlink($gambar_lama);
+                    }
+                }
+
+                $gambar = $request->file('gambar');
+                $nama_gambar = time().'.'.$gambar->getClientOriginalExtension();
+                $tempat = public_path('/images/merek');
+                $gambar->move($tempat, $nama_gambar);
             }
 
-            $gambar = $request->file('gambar');
-            $nama_gambar = time().'.'.$gambar->getClientOriginalExtension();
-            $tempat = public_path('/images/merek');
-            $gambar->move($tempat, $nama_gambar);
+            MerekMobil::where('kode_merek', $kode_merek)->update([
+                'merek' => $merek,
+                'gambar' => $nama_gambar,
+            ]);
+
+            return redirect('/dashboard/produk');
         }
-
-        MerekMobil::where('kode_merek', $kode_merek)->update([
-            'merek' => $request->input('merek'),
-            'gambar' => $nama_gambar,
-        ]);
-
-        return redirect('/dashboard/produk');
     }
 
     public function hapusMerek($kode_merek)
     {
         $data = MerekMobil::where('kode_merek', $kode_merek)->first();
+        $merek = $data->merek;
 
-        if ($data->gambar) {
-            $gambar = public_path('/images/merek/' . $data->gambar);
+        $data_mobil = Mobil::where('kode_merek', $kode_merek)->first();
 
-            if (file_exists($gambar)) {
-                unlink($gambar);
+        if ($data_mobil) {
+            return redirect()->back()->with('error', 'TERDAPAT MOBIL YANG MEMILIKI MEREK "'.$merek.'", SEHINGGA TIDAK DAPAT DIHAPUS!');
+        } else {
+
+            if ($data->gambar) {
+                $gambar = public_path('/images/merek/' . $data->gambar);
+    
+                if (file_exists($gambar)) {
+                    unlink($gambar);
+                }
             }
+    
+            MerekMobil::where('kode_merek', $kode_merek)->delete();
+    
+            return redirect('/dashboard/produk');
+
         }
-
-        MerekMobil::where('kode_merek', $kode_merek)->delete();
-
-        return redirect('/dashboard/produk');
     }
 }

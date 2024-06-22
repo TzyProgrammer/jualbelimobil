@@ -137,6 +137,11 @@
               </svg>      
             <span>Tambah Merek</span>
         </a>
+        @if (session('error'))
+            <span class="font-bold text-lg text-red-600 p-3">
+                {{ session('error') }}
+            </span>
+        @endif
         <div class="mt-5">
             <div class="grid grid-cols-4 gap-8">
                 @foreach ($data_merek as $merek)

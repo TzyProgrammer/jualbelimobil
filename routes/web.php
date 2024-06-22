@@ -77,36 +77,6 @@ Route::prefix('dashboard')->group(function () {
 
 });
 
-// Route::get('/dashboardproduk', [DashboardProdukController::class, 'lihat']);
-
-// Route::delete('/dashboardproduk/{kode_merek}', [DashboardProdukController::class, 'hapusMerek'])->name('merek.hapus');
-
-// Route::get('/dashboardtambahproduk', [DashboardProdukController::class, 'pilihanMerek']);
-
-// Route::post('/dashboardtambahproduk', [DashboardProdukController::class, 'tambahProduk'])->name('produk.tambah');
-
-// Route::get('/dashboardlihatproduk/{kode_mobil}', [DashboardProdukController::class, 'lihatProduk']);
-
-// Route::get('/dashboardubahproduk/{kode_mobil}', [DashboardProdukController::class, 'ambilDataProduk']);
-
-// Route::post('/dashboardubahproduk', [DashboardProdukController::class, 'ubahProduk'])->name('produk.ubah');
-
-// Route::get('/dashboardtambahmerek', [DashboardProdukController::class, 'dashboardTambahMerek']);
-
-// Route::post('/dashboardtambahmerek', [DashboardProdukController::class, 'tambahMerek'])->name('merek.tambah');
-
-// Route::get('/dashboardubahmerek/{kode_merek}', [DashboardProdukController::class, 'ambilDataMerek']);
-
-// Route::post('/dashboardubahmerek', [DashboardProdukController::class, 'ubahMerek'])->name('merek.ubah');
-
-// Route::get('/dashboardpesanan', function () {
-//     return view('dashboard_pesanan');
-// });
-
-// Route::get('/dashboardstatistik', function () {
-//     return view('dashboard_statistik');
-// });
-
 Route::get('/profil', function () {
     return view('profil');
 });
