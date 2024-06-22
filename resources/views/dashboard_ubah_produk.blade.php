@@ -52,7 +52,7 @@
         <span class="text-gray-400">*Jika tidak ingin mengubah gambar mobil, maka tidak perlu diisi.</span>
         <div class="flex justify-end space-x-3">
             <button type="submit" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 rounded-lg text-center">Simpan</button>
-            <a href="/dashboardproduk" role="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white rounded-lg text-center border">Batal</a>
+            <a href="/dashboard/produk" role="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white rounded-lg text-center border">Batal</a>
         </div>
     </form>
 </div>

@@ -13,7 +13,7 @@
         <span class="flex self-center justify-center text-xl font-semibold whitespace-nowrap mb-10 text-red-600">Dashboard</span>
        <ul class="space-y-2 font-medium">
           <li>
-             <a href="/dashboardproduk" class="flex items-center justify-center p-2 text-gray-900 group">
+             <a href="/dashboard/produk" class="flex items-center justify-center p-2 text-gray-900 group">
                 <button type="button" class="bg-gray-300 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 w-full">
                     <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5"/>
@@ -23,7 +23,7 @@
              </a>
           </li>
           <li>
-             <a href="/dashboardstatistik" class="flex items-center justify-center p-2 text-gray-900 group">
+             <a href="/dashboard/statistik" class="flex items-center justify-center p-2 text-gray-900 group">
                 <button type="button" class="bg-gray-300 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 w-full">
                     <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v15a1 1 0 0 0 1 1h15M8 16l2.5-5.5 3 3L17.273 7 20 9.667"/>
@@ -33,7 +33,7 @@
              </a>
           </li>
           <li>
-             <a href="/dashboardpesanan" class="flex items-center justify-center p-2 text-gray-900 group">
+             <a href="/dashboard/pesanan" class="flex items-center justify-center p-2 text-gray-900 group">
                 <button type="button" class="bg-gray-300 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mx-2 w-full">
                     <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-6 5h6m-6 4h6M10 3v4h4V3h-4Z"/>

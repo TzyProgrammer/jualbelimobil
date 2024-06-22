@@ -20,7 +20,7 @@
 </div>
 <div id="default-tab-content">
     <div class="hidden rounded-lg" id="produk" role="tabpanel" aria-labelledby="produk-tab">
-        <a href="/dashboardtambahproduk" role="button" class="mt-4 px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">
+        <a href="/dashboard/produk/tambah" role="button" class="mt-4 px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">
             <svg class="w-4 h-4 mr-1 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
               </svg>      
@@ -29,12 +29,12 @@
         <div class="flex pt-2 pb-5 items-center">
             <h2 class="font-medium text-xl">KATEGORI</h2>
             <div class="container px-16 flex justify-between">
-                <img src="images/logo_hyundai.png" alt="Logo Hyundai" class="w-16">
-                <img src="images/logo_nissan2.png" alt="Logo Nissan" class="w-16">
-                <img src="images/logo_honda.png" alt="Logo Honda" class="w-16">
-                <img src="images/logo_suzuki2.png" alt="Logo Suzuki" class="w-16">
-                <img src="images/logo_bmw.png" alt="Logo BMW" class="w-16">
-                <img src="images/logo_chevrolet.png" alt="Logo Chevrolet" class="w-16">
+                <img src="/images/logo_hyundai.png" alt="Logo Hyundai" class="w-16">
+                <img src="/images/logo_nissan2.png" alt="Logo Nissan" class="w-16">
+                <img src="/images/logo_honda.png" alt="Logo Honda" class="w-16">
+                <img src="/images/logo_suzuki2.png" alt="Logo Suzuki" class="w-16">
+                <img src="/images/logo_bmw.png" alt="Logo BMW" class="w-16">
+                <img src="/images/logo_chevrolet.png" alt="Logo Chevrolet" class="w-16">
             </div>
         </div>
         <div class="relative overflow-x-auto">
@@ -74,13 +74,13 @@
                             {{ $mobil->deskripsi_mobil }}
                         </td>
                         <td class="px-6 py-4 flex justify-between bg-red-100">
-                            <a href="/dashboardlihatproduk/{{ $mobil->kode_mobil }}">
+                            <a href="/dashboard/produk/lihat/{{ $mobil->kode_mobil }}">
                                 <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                     <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                   </svg>
                             </a>
-                            <a href="/dashboardubahproduk/{{ $mobil->kode_mobil }}">
+                            <a href="/dashboard/produk/ubah/{{ $mobil->kode_mobil }}">
                                 <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
                                   </svg>
@@ -131,7 +131,7 @@
         </div>
     </div>
     <div class="hidden rounded-lg" id="merek" role="tabpanel" aria-labelledby="merek-tab">
-        <a href="/dashboardtambahmerek" role="button" class="mt-4 px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">
+        <a href="/dashboard/merek/tambah" role="button" class="mt-4 px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center">
             <svg class="w-4 h-4 mr-1 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
               </svg>      
@@ -147,7 +147,7 @@
                         <img src="/images/merek/{{ $merek->gambar }}" alt="Logo" class="w-24 justify-self-center">
                         <p class="my-4">Merek: <span class="font-bold">{{ $merek->merek }}</span></p>
                         <div class="flex justify-between">
-                            <a href="/dashboardubahmerek/{{ $merek->kode_merek }}" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center self-center">Ubah</a>
+                            <a href="/dashboard/merek/ubah/{{ $merek->kode_merek }}" role="button" class="px-5 py-2.5 text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-center self-center">Ubah</a>
                             <button data-modal-target="merek-modal-{{ $merek->kode_merek }}" data-modal-toggle="merek-modal-{{ $merek->kode_merek }}" type="button" class="px-5 py-2.5 text-sm font-medium text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg text-center self-center">Hapus</button>
                         </div>
                     </div>

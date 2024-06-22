@@ -28,7 +28,7 @@ class DashboardProdukController extends Controller
         $merek = $request->input('merek');
 
         if ($merek == 'Pilih Merek') {
-            return redirect('/dashboardtambahproduk')->with('error', 'PILIH MEREK!');
+            return redirect('/dashboard/produk/tambah')->with('error', 'PILIH MEREK!');
         } else {
             $data_merek = MerekMobil::where('merek', $merek)->first();
             $kode_merek = $data_merek->kode_merek;
@@ -52,7 +52,7 @@ class DashboardProdukController extends Controller
             $mobil->deskripsi_mobil = $request->input('deskripsi');
             $mobil->save();
 
-            return redirect('/dashboardproduk');
+            return redirect('/dashboard/produk');
         }
     }
 
@@ -123,7 +123,7 @@ class DashboardProdukController extends Controller
             'deskripsi_mobil' => $request->input('deskripsi_mobil'),
         ]);
 
-        return redirect('/dashboardproduk');
+        return redirect('/dashboard/produk');
     }
 
     public function dashboardTambahMerek()
@@ -149,7 +149,7 @@ class DashboardProdukController extends Controller
             $merekmobil->gambar = $nama_gambar;
             $merekmobil->save();
 
-            return redirect('/dashboardproduk');
+            return redirect('/dashboard/produk');
         }
     }
 
@@ -189,7 +189,7 @@ class DashboardProdukController extends Controller
             'gambar' => $nama_gambar,
         ]);
 
-        return redirect('/dashboardproduk');
+        return redirect('/dashboard/produk');
     }
 
     public function hapusMerek($kode_merek)
@@ -206,6 +206,6 @@ class DashboardProdukController extends Controller
 
         MerekMobil::where('kode_merek', $kode_merek)->delete();
 
-        return redirect('/dashboardproduk');
+        return redirect('/dashboard/produk');
     }
 }
