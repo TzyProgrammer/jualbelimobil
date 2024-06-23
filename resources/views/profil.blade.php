@@ -30,9 +30,9 @@
 
   <div class="mt-16">
     <a href="/ubahprofil" class=" mr-9 text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-16 py-2.5 text-center">Ubah</a>
-
-    <a href="/login" class="ml-2 text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-16 py-2.5 text-center">Logout</a>
-
+    <form method="POST" action="{{ route('logout') }}">
+    <button type="submit" class="ml-2 text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-16 py-2.5 text-center">Logout</>
+    </form>
   </div>
 
 </form>

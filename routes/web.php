@@ -15,11 +15,12 @@ use App\Http\Controllers\ResiController;
 use App\Http\Controllers\UbahProfilController;
 
 use App\Http\Controllers\LoginController;
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login')->middleware('alreadyLoggedIn');
 Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 use App\Http\Controllers\DaftarController;
-Route::get('/daftar', [DaftarController::class, 'showDaftarForm'])->name('daftar');
+Route::get('/daftar', [DaftarController::class, 'showDaftarForm'])->name('daftar')->middleware('alreadyLoggedIn');
 Route::post('/daftar', [DaftarController::class, 'daftar'])->name('daftar');
 
 Route::get('/home', function () {
@@ -35,7 +36,7 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::prefix('dashboard')->group(function () {
+Route::prefix('dashboard')->middleware('authcheck')->group(function () {
     
     Route::prefix('produk')->group(function () {
 
@@ -55,7 +56,7 @@ Route::prefix('dashboard')->group(function () {
 
     });
 
-    Route::prefix('merek')->group(function () {
+    Route::prefix('merek')->middleware('authcheck')->group(function () {
 
         Route::get('/tambah', [DashboardProdukController::class, 'dashboardTambahMerek']);
 
