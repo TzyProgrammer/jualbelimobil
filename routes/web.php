@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\CheckoutController;
-use App\Http\Controllers\DashboardProdukController;
 use App\Http\Controllers\DashboardPesananController;
 use App\Http\Controllers\DashboardStatistikController;
 use App\Http\Controllers\DetailProdukController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KatalogController;
-
-use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ResiController;
 use App\Http\Controllers\UbahProfilController;
 
@@ -34,6 +32,7 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+use App\Http\Controllers\DashboardProdukController;
 Route::prefix('dashboard')->middleware('authcheck')->group(function () {
     
     Route::prefix('produk')->group(function () {
@@ -54,7 +53,7 @@ Route::prefix('dashboard')->middleware('authcheck')->group(function () {
 
     });
 
-    Route::prefix('merek')->middleware('authcheck')->group(function () {
+    Route::prefix('merek')->group(function () {
 
         Route::get('/tambah', [DashboardProdukController::class, 'dashboardTambahMerek']);
 
@@ -76,16 +75,8 @@ Route::prefix('dashboard')->middleware('authcheck')->group(function () {
 
 });
 
-Route::prefix('profil')->middleware('authcheck')->group(function () {
-
-    Route::get('/', [ProfilController::class, 'lihat']);
-
-    Route::get('/ubah/{id_pembeli}', [ProfilController::class, 'AmbilDataPembeli']);
-
-    Route::post('/ubah', [ProfilController::class, 'ubahMerek'])->name('merek.ubah');
-   
-
-});
+use App\Http\Controllers\ProfilController;
+Route::get('/profil', [ProfilController::class, 'showProfile'])->name('profil');
 
 Route::get('/ubahprofil', function () {
     return view('ubah_profil');

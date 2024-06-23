@@ -3,20 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Pembeli;
 
 class ProfilController extends Controller
 {
-    public function edit()
+    public function __construct()
     {
-        $user = auth()->user(); // Ambil data pengguna yang sedang login
-        return view('profile.edit', compact('user'));
+        $this->middleware('authcheck');
     }
 
-    public function update(Request $request)
+    public function showProfile(Request $request)
     {
-        $user = auth()->user(); // Ambil data pengguna yang sedang login
-        $user->update($request->all());
+        if ($request->session()->has('loginIdPembeli')) {
+            $user = Pembeli::find($request->session()->get('loginIdPembeli'));
+        } else {
+            return redirect('/login')->with('fail', 'You have to login first.');
+        }
 
-        return redirect()->route('profile.edit')->with('success', 'Profil berhasil diperbarui.');
+        return view('profil', ['user' => $user]);
     }
 }

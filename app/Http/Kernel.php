@@ -67,6 +67,6 @@ class Kernel extends HttpKernel
     ];
     protected $routeMiddleware = [
         'authcheck' => \App\Http\Middleware\AuthCheck::class,
-        'alreadyloggedin' => \App\Http\Middleware\AlreadyLoggedIn::class,
+        'alreadyLoggedIn' => \App\Http\Middleware\AlreadyLoggedIn::class,
     ];
 }
