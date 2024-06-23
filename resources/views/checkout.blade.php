@@ -27,7 +27,7 @@
             </div>
     <div>
             <!-- input  -->
- <div class="mx-auto w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-7xl xl:p-0 dark:bg-gray-800 dark:border-gray-700 pb-6">
+ <div class="mx-auto w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-7xl xl:p-0 pb-6">
                 <div class="p-6 space-y-2">
                     <p class="text-xl text-red-600">Total Harga</p>
                     <div
@@ -114,7 +114,7 @@
 </div>
 
         <div class="w-full flex justify-center mt-10 mb-16">
-            <button type="submit" class="w-80 text-white bg-red-700 hover:bg-red-700 focus:ring-6 focus:outline-1 focus:ring-primary-300 font-medium rounded-full text-2xl px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">PESAN</button>
+            <button type="submit" class="w-80 text-white bg-red-700 hover:bg-red-700 focus:ring-6 focus:outline-1 focus:ring-primary-300 font-medium rounded-full text-2xl px-5 py-2.5 text-center ">PESAN</button>
         </div>
         
     </body>

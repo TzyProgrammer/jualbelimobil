@@ -40,64 +40,19 @@
     
 
     <div class="flex flex-row items-center justify-center my-10 bg-red-900 space-x-4 px-4">
+           @foreach ($mobil as $data)
             <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
-                <a href="#">
-                    <img class="w-64 rounded-t-lg my-8 mx-8" src="images/bmw-3.png" alt="" />
+                <a href="/detailproduk/{{$data->kode_mobil}}">
+                    <img class="w-64 rounded-t-lg my-8 mx-8" src="/images/produk/{{$data->gambar_mobil}}" alt="" />
                 </a>
                 <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">BMW 5 Series</h5>
-                    </a>
-                    <p class="mb-3 text-sm text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#" class="inline-flex bg-red-200 items-center rounded-md  px-3 py-2 text-md font-black text-center text-red-900 hover:bg-red-100">
-                    Rp. 1.987.897.900,00
-                    </a>
+                    <a href="/detailproduk/{{$data->kode_mobil}}">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{$data->nama_mobil}}</h5></a>
+                    <p class="mb-3 text-sm text-gray-700">{{$data->deskripsi_mobil}}</p>
+                    <a href="/detailproduk/{{$data->kode_mobil}}" class="inline-flex bg-red-200 items-center rounded-md  px-3 py-2 text-md font-black text-center text-red-900 hover:bg-red-100">{{$data->harga_mobil}}</a>
                 </div> 
             </div> 
-            <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
-                <a href="#">
-                    <img class="w-64 rounded-t-lg my-8 mx-8" src="images/bmw-3.png" alt="" />
-                </a>
-                <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">BMW 5 Series</h5>
-                    </a>
-                    <p class="mb-3 text-sm text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#" class="inline-flex bg-red-200 items-center rounded-md  px-3 py-2 text-md font-black text-center text-red-900 hover:bg-red-100">
-                    Rp. 1.987.897.900,00
-                    </a>
-                </div> 
-            </div>
-            <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
-                <a href="#">
-                    <img class="w-64 rounded-t-lg my-8 mx-8" src="images/bmw-3.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">BMW 5 Series</h5>
-                    </a>
-                    </a>
-                    <p class="mb-3 text-sm text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#" class="inline-flex bg-red-200 items-center rounded-md  px-3 py-2 text-md font-black text-center text-red-900 hover:bg-red-100">
-                    Rp. 1.987.897.900,00
-                    </a>
-                </div> 
-            </div>
-            <div class="max-w-sm bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 mb-4">
-                <a href="#">
-                    <img class="w-64 rounded-t-lg my-8 mx-8" src="images/bmw -m.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">BMW M Series</h5>
-                    </a>
-                    </a>
-                    <p class="mb-3 text-sm text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#" class="inline-flex bg-red-200 items-center rounded-md  px-3 py-2 text-md font-black text-center text-red-900 hover:bg-red-100">
-                    Rp. 1.987.897.900,00
-                    </a>
-                </div> 
-            </div>                  
+            @endforeach          
     </div>
 
 

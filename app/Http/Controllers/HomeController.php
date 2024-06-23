@@ -3,19 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Mobil;
+
 
 class HomeController extends Controller
 {
-        public function index ()
+        public function home ()
         {
-            $data = [
-                'nama' => 'Doraemon',
-                'pekerjaan' => 'Deverloper',
-            ];
-             return view ('home')->with($data);
+            $mobil = Mobil::orderBy('kode_mobil', 'desc')->take(4)->get();
+             return view('home', compact('mobil'));
         }
-        public function contact()
-        {
-            return view ('contact');
-        }
+       
 }

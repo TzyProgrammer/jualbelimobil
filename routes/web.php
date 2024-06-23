@@ -23,9 +23,7 @@ use App\Http\Controllers\DaftarController;
 Route::get('/daftar', [DaftarController::class, 'showDaftarForm'])->name('daftar')->middleware('alreadyLoggedIn');
 Route::post('/daftar', [DaftarController::class, 'daftar'])->name('daftar');
 
-Route::get('/home', function () {
-    return "Home - Pembeli";
-})->name('home');
+Route::get('/home', [HomeController::class, 'home'] );
 
 // Route::get('/dashboardproduk', function () {
 //     return "Dashboard Produk - Penjual";
@@ -78,17 +76,22 @@ Route::prefix('dashboard')->middleware('authcheck')->group(function () {
 
 });
 
-Route::get('/profil', function () {
-    return view('profil');
+Route::prefix('profil')->middleware('authcheck')->group(function () {
+
+    Route::get('/', [ProfilController::class, 'lihat']);
+
+    Route::get('/ubah/{id_pembeli}', [ProfilController::class, 'AmbilDataPembeli']);
+
+    Route::post('/ubah', [ProfilController::class, 'ubahMerek'])->name('merek.ubah');
+   
+
 });
 
 Route::get('/ubahprofil', function () {
     return view('ubah_profil');
 });
 
-Route::get('/detailproduk', function () {
-    return view('detail_produk');
-});
+Route::get('/detailproduk/{kode_mobil}', [DetailProdukController::class , 'TampilkanDetail']);
 
 Route::get('/favorite', function () {
     return view('favorite');
@@ -106,9 +109,7 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/katalog', function () {
-    return view('katalog');
-});
+Route::get('/katalog', [KatalogController::class, 'lihat']);
 
 Route::get('/pesanan', function () {
     return view('pesanan');
