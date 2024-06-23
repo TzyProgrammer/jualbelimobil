@@ -194,4 +194,30 @@
     </div>
 </div>
 
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tabAktif = urlParams.get('tab') || 'produk';
+
+        const produkTab = document.getElementById('produk-tab');
+        const merekTab = document.getElementById('merek-tab');
+        const produkContent = document.getElementById('produk');
+        const merekContent = document.getElementById('merek');
+
+        if (tabAktif === 'merek') {
+            produkTab.setAttribute('aria-selected', 'false');
+            merekTab.setAttribute('aria-selected', 'true');
+            produkContent.classList.add('hidden');
+            merekContent.classList.remove('hidden');
+        } else {
+            produkTab.setAttribute('aria-selected', 'true');
+            merekTab.setAttribute('aria-selected', 'false');
+            produkContent.classList.remove('hidden');
+            merekContent.classList.add('hidden');
+        }
+    });
+
+</script>
+
 @endsection

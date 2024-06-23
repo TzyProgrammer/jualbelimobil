@@ -8,12 +8,14 @@ use App\Models\Mobil;
 
 class DashboardProdukController extends Controller
 {
-    public function lihat()
+    public function lihat(Request $request)
     {
         $data_merek = MerekMobil::get();
         $data_mobil = Mobil::get();
 
-        return view('/dashboard_produk', compact('data_merek', 'data_mobil'));
+        $tab_aktif = $request->input('tab', 'produk');
+
+        return view('/dashboard_produk', compact('data_merek', 'data_mobil', 'tab_aktif'));
     }
 
     public function pilihanMerek()
@@ -155,7 +157,7 @@ class DashboardProdukController extends Controller
                 $merekmobil->gambar = $nama_gambar;
                 $merekmobil->save();
     
-                return redirect('/dashboard/produk');
+                return redirect('/dashboard/produk?tab=merek');
             }
         }
     }
@@ -178,8 +180,6 @@ class DashboardProdukController extends Controller
         $data_untuk_ubahMerek = session('data_untuk_ubahMerek');
 
         $data_merek = MerekMobil::where('merek', $merek)->first();
-        // $data_lama = MerekMobil::where('merek', '!=', $data_untuk_ubahMerek)->first();
-        // $data_baru = MerekMobil::where('merek', $merek)->first();
 
         if ($data_merek) {
             if ($data_merek->merek !== $data_untuk_ubahMerek) {
@@ -216,7 +216,7 @@ class DashboardProdukController extends Controller
                     'gambar' => $nama_gambar,
                 ]);
     
-                return redirect('/dashboard/produk');
+                return redirect('/dashboard/produk?tab=merek');
             }
         } else {
             $request->validate([
@@ -250,7 +250,7 @@ class DashboardProdukController extends Controller
                 'gambar' => $nama_gambar,
             ]);
 
-            return redirect('/dashboard/produk');
+            return redirect('/dashboard/produk?tab=merek');
         }
     }
 
@@ -262,7 +262,7 @@ class DashboardProdukController extends Controller
         $data_mobil = Mobil::where('kode_merek', $kode_merek)->first();
 
         if ($data_mobil) {
-            return redirect()->back()->with('error', 'TERDAPAT MOBIL YANG MEMILIKI MEREK "'.$merek.'", SEHINGGA TIDAK DAPAT DIHAPUS!');
+            return redirect('/dashboard/produk?tab=merek')->with('error', 'TERDAPAT MOBIL YANG MEMILIKI MEREK "'.$merek.'", SEHINGGA TIDAK DAPAT DIHAPUS!');
         } else {
 
             if ($data->gambar) {
@@ -275,7 +275,7 @@ class DashboardProdukController extends Controller
     
             MerekMobil::where('kode_merek', $kode_merek)->delete();
     
-            return redirect('/dashboard/produk');
+            return redirect('/dashboard/produk?tab=merek');
 
         }
     }
