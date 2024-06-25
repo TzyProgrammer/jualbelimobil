@@ -4,7 +4,7 @@
             <img src="images/logokecil.png" alt="Logo" class="w-32">
         </a>
         <div class="flex items-center font-medium">
-            <a href="/home" class="px-4 text-primary-600 hover:underline">
+            <a href="/" class="px-4 text-primary-600 hover:underline">
                 Beranda
             </a>
             <a href="/pesanan" class="px-4 text-primary-600 hover:underline">

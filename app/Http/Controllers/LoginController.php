@@ -26,7 +26,7 @@ class LoginController extends Controller
         if (Auth::guard('pembeli')->attempt($credentials)) {
             $user = Auth::guard('pembeli')->user();
             $request->session()->put('loginIdPembeli', $user->id_pembeli);
-            return redirect()->intended('/home');
+            return redirect()->intended('/');
         } elseif (Auth::guard('penjual')->attempt($credentials)) {
             $user = Auth::guard('penjual')->user();
             $request->session()->put('loginIdPenjual', $user->id_penjual);

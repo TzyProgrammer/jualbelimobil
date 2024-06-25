@@ -10,7 +10,7 @@
   <main class="p-8">
     <div class="bg-rose-50 flex flex-col justify-between p-8 pb-20 w-full">
       <div class="flex justify-end gap-5 items-center">
-      <button type="submit" class="mt-1 -35 text-white bg-red-700 hover:bg-red-700 focus:ring-6 focus:outline-1 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Cetak Faktur</button>
+      <button type="submit" class="mt-1 -35 text-white bg-red-700 hover:bg-red-700 focus:ring-6 focus:outline-1 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center :bg-primary-600 :hover:bg-primary-700 :focus:ring-primary-800">Cetak Faktur</button>
       </div>
 
       <div class="flex justify-around items-end p-5">

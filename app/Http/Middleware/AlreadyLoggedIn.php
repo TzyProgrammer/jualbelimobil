@@ -10,10 +10,10 @@ class AlreadyLoggedIn
     public function handle(Request $request, Closure $next)
     {
         if (session()->has('loginIdPembeli') && (url('login') == $request->url() || url('daftar') == $request->url())) {
-            return redirect('/home');
+            return redirect('/');
         }
         if (session()->has('loginIdPenjual') && (url('login') == $request->url() || url('daftar') == $request->url())) {
-            return redirect('/dashboardproduk');
+            return redirect('/dashboard/produk');
         }
         return $next($request);
     }

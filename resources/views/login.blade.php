@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   
-  <section class=" bg-red-900 dark:bg-red-900">
+  <section class=" bg-red-900 :bg-red-900">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 ">
       <img class="mx-auto my-auto mt-6" src="images/logo.png" alt="logo" width="150" >

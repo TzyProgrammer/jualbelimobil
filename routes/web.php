@@ -5,12 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DashboardPesananController;
 use App\Http\Controllers\DashboardStatistikController;
-use App\Http\Controllers\DetailProdukController;
 use App\Http\Controllers\FavoriteController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\KatalogController;
 use App\Http\Controllers\ResiController;
-use App\Http\Controllers\UbahProfilController;
 
 use App\Http\Controllers\LoginController;
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login')->middleware('alreadyLoggedIn');
@@ -21,12 +17,11 @@ use App\Http\Controllers\DaftarController;
 Route::get('/daftar', [DaftarController::class, 'showDaftarForm'])->name('daftar')->middleware('alreadyLoggedIn');
 Route::post('/daftar', [DaftarController::class, 'daftar'])->name('daftar');
 
-Route::get('/home', [HomeController::class, 'home'] );
+use App\Http\Controllers\HomeController;
+Route::get('/', [HomeController::class, 'home']);
 
-// Route::get('/dashboardproduk', function () {
-//     return "Dashboard Produk - Penjual";
-// })->name('dashboardproduk');
-
+use App\Http\Controllers\KatalogController;
+Route::get('/katalog', [KatalogController::class, 'lihat']);
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -78,17 +73,18 @@ Route::prefix('dashboard')->middleware('authcheck')->group(function () {
 use App\Http\Controllers\ProfilController;
 Route::get('/profil', [ProfilController::class, 'showProfile'])->name('profil');
 
-Route::get('/ubahprofil', function () {
-    return view('ubah_profil');
-});
+use App\Http\Controllers\UbahProfilController;
+Route::get('/ubahprofil', [UbahProfilController::class, 'showEditProfileForm'])->name('ubahprofil');
+Route::put('/profil', [UbahProfilController::class, 'updateProfile'])->name('updateProfile');
 
+use App\Http\Controllers\DetailProdukController;
 Route::get('/detailproduk/{kode_mobil}', [DetailProdukController::class , 'TampilkanDetail']);
 
 Route::get('/favorite', function () {
     return view('favorite');
 });
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 });
 
@@ -99,8 +95,6 @@ Route::get('/daftar', function () {
 Route::get('/login', function () {
     return view('login');
 });
-
-Route::get('/katalog', [KatalogController::class, 'lihat']);
 
 Route::get('/pesanan', function () {
     return view('pesanan');

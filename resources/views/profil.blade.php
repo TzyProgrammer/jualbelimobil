@@ -5,11 +5,10 @@
 @section('content')
 
 <div class="flex flex-row">
-
   <div class="w-64 mt-16 ml-8">
-    <img src="images/profil.jpg" alt="">
+    <img src="{{ $user->foto_profil ? asset('images/fotoprofil/' . $user->foto_profil) : asset('images/profil.jpg') }}" alt="Profile Photo">
   </div>
-  
+
   <form method="POST" action="{{ route('logout') }}" class="max-w-sm mx-24 mb-20">
     @csrf
     <div class="mb-5">
@@ -34,14 +33,10 @@
     @endif
 
     <div class="mt-16">
-      <a href="/ubahprofil" class="mr-9 text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-16 py-2.5 text-center">Ubah</a>
+      <a href="{{ route('ubahprofil') }}" class="mr-9 text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-16 py-2.5 text-center">Ubah</a>
       <button type="submit" class="text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-16 py-2.5 text-center">Logout</button>
     </div>
-
   </form>
-
-
-
 </div>
 
 @endsection

@@ -9,8 +9,8 @@
 
 
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 border-spacing-2">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 :text-gray-400 border-spacing-2">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-200 :bg-gray-700 :text-gray-400">
             <tr>
                 <th scope="col" class="px-6 py-3">
                     Nomor Orderan
@@ -38,7 +38,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+            <tr class="bg-white border-b :bg-gray-800 :border-gray-700 hover:bg-gray-50 :hover:bg-gray-600">
                 <td class="px-6 py-4">
                     1
                 </td>
@@ -72,7 +72,7 @@
                     </form>
                 </td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+            <tr class="bg-white border-b :bg-gray-800 :border-gray-700 hover:bg-gray-50 :hover:bg-gray-600">
                 <td class="px-6 py-4">
                     2
                 </td>
@@ -106,7 +106,7 @@
                     </form>
                 </td>
             </tr>
-            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+            <tr class="bg-white :bg-gray-800 hover:bg-gray-50 :hover:bg-gray-600">
                 <td class="px-6 py-4">
                     3
                 </td>
