@@ -12,7 +12,7 @@
     @include('components.navbar')
 
     <div class="pt-20 px-6">
-        @if (Request::path() !== 'home')
+        @if (Request::path() !== '/')
         <div class="items-center">
             <a href="javascript:history.back()">
                 <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

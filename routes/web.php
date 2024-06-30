@@ -46,6 +46,8 @@ Route::prefix('dashboard')->middleware('authcheck')->group(function () {
 
         Route::post('/ubah', [DashboardProdukController::class, 'ubahProduk'])->name('produk.ubah');
 
+        Route::post('/', [DashboardProdukController::class, 'hapusProduk'])->name('produk.hapus');
+
     });
 
     Route::prefix('merek')->group(function () {

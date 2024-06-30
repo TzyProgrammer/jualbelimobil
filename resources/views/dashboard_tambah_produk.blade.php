@@ -18,7 +18,14 @@
             <tr>
                 <td class="p-1.5"><label for="nama">Nama Mobil</label></td>
                 <td class="p-1.5">:</td>
-                <td class="p-1.5"><input type="text" id="nama" class="border-transparent rounded-md" name="nama" required></td>
+                <td class="p-1.5">
+                    <input type="text" id="nama" class="border-transparent rounded-md" name="nama" required>
+                    @error('nama')
+                        <span class="font-bold text-lg text-red-600 p-3">
+                            NAMA MOBIL TIDAK BISA MELEBIHI 50 HURUF!
+                        </span>
+                    @enderror
+                </td>
             </tr>
             <tr>
                 <td class="p-1.5"><label for="merek">Merek</label></td>
@@ -35,17 +42,38 @@
             <tr>
                 <td class="p-1.5"><label for="harga">Harga</label></td>
                 <td class="p-1.5">:</td>
-                <td class="p-1.5"><input type="number" id="harga" class="border-transparent rounded-md" min="0" name="harga" required></td>
+                <td class="p-1.5">
+                    <input type="number" id="harga" class="border-transparent rounded-md" min="0" name="harga" required>
+                    @error('harga')
+                        <span class="font-bold text-lg text-red-600 p-3">
+                            HARGA HARUS BERUPA ANGKA DAN TIDAK BISA MELEBIHI 20 ANGKA!
+                        </span>
+                    @enderror
+                </td>
             </tr>
             <tr>
                 <td class="p-1.5"><label for="deskripsi">Deskripsi</label></td>
                 <td class="p-1.5">:</td>
-                <td class="p-1.5"><textarea id="deskripsi" cols="60" rows="4" class="border-transparent rounded-md p-2" name="deskripsi" required></textarea></td>
+                <td class="p-1.5">
+                    <textarea id="deskripsi" cols="60" rows="4" class="border-transparent rounded-md p-2" name="deskripsi" required></textarea>
+                    @error('deskripsi')
+                        <span class="font-bold text-lg text-red-600 p-3">
+                            DESKRIPSI TIDAK BISA MELEBIHI 1000 HURUF!
+                        </span>
+                    @enderror
+                </td>
             </tr>
             <tr>
                 <td class="p-1.5"><label for="gambar">Gambar</label></td>
                 <td class="p-1.5">:</td>
-                <td class="p-1.5"><input type="file" id="gambar" class="border-transparent rounded-md bg-white" name="gambar" required></td>
+                <td class="p-1.5">
+                    <input type="file" id="gambar" class="border-transparent rounded-md bg-white" name="gambar" required>
+                    @error('gambar')
+                        <span class="font-bold text-lg text-red-600 p-3">
+                            HARUS MERUPAKAN GAMBAR DENGAN EKSTENSI JPEG/PNG/JPG DENGAN MAKSIMAL 2048 KB!
+                        </span>
+                    @enderror
+                </td>
             </tr>
         </table>
         <div class="flex justify-end space-x-3">
