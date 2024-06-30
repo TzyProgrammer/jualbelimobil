@@ -23,10 +23,6 @@ Route::get('/', [HomeController::class, 'home']);
 use App\Http\Controllers\KatalogController;
 Route::get('/katalog', [KatalogController::class, 'lihat']);
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-
 use App\Http\Controllers\DashboardProdukController;
 Route::prefix('dashboard')->middleware('authcheck')->group(function () {
     
@@ -82,13 +78,10 @@ Route::put('/profil', [UbahProfilController::class, 'updateProfile'])->name('upd
 use App\Http\Controllers\DetailProdukController;
 Route::get('/detailproduk/{kode_mobil}', [DetailProdukController::class , 'TampilkanDetail']);
 
-Route::get('/favorite', function () {
-    return view('favorite');
-});
+Route::post('/detailproduk', [DetailProdukController::class , 'favorit'])->name('favorit');
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/favorite', [FavoriteController::class , 'favorit']);
+Route::post('/favorite', [FavoriteController::class , 'hapusFavorit'])->name('hapus.favorit');
 
 Route::get('/daftar', function () {
     return view('daftar');

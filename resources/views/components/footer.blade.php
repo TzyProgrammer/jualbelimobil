@@ -1,6 +1,6 @@
 <footer class="p-3 bg-gray-200 columns-2 ">
     <div class="">
-        <img class="w-40" src="images/logokecil.png" alt="Logo">
+        <img class="w-40" src="/images/logokecil.png" alt="Logo">
         <p class="text-sm pr-8">is a web-based application that sells various types of car brands. This application was created to make it easier for buyers so that buyers don't have to visit the place directly to see the car, just go through the website to see the details of the car and also with more flexible times.</p>
         <div class="flex py-10 items-center">
             <svg class="w-8 h-8 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

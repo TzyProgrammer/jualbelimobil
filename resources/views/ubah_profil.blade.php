@@ -15,10 +15,9 @@
 
   <form action="{{ route('updateProfile') }}" method="POST" enctype="multipart/form-data" class="max-w-sm mx-24 mb-20 ml-20">
     @csrf
-    @method('PUT')
     <div class="mb-5">
       <label class="block mb-2 text-sm font-medium text-gray-900">Username</label>
-      <input type="text" name="username" class="w-96 shadow-sm bg-red-50 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="Ubah username" value="{{ $user->username }}" />
+      <input type="text" name="username" class="w-96 shadow-sm bg-red-50 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="Ubah username" value="{{ $user->username }}" disabled/>
     </div>
     <div class="mb-5">
       <label class="block mb-2 text-sm font-medium text-gray-900">Nama</label>

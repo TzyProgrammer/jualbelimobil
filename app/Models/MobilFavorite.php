@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class MobilFavorite extends Model
 {
     use HasFactory;
-    protected $table='mobil_favorit';
-    public $timestamps='false';
+    protected $table = 'mobil_favorit';
+    protected $fillable = ['id_pembeli', 'kode_mobil'];
+    protected $guarded = ['id_favorit'];
+    public $timestamps = false;
 }
