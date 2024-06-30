@@ -62,10 +62,6 @@ Route::prefix('dashboard')->middleware('authcheck')->group(function () {
 
     Route::post('/pesanan/{nomor_orderan}', [DashboardPesananController::class, 'updateStatusPesanan'])->name('update.status.pesanan');
     
-    Route::get('/statistik', function () {
-        return view('dashboard_statistik');
-    });
-
 });
 
 use App\Http\Controllers\ProfilController;
