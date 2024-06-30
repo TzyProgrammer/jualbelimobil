@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\MerekMobil;
 use App\Models\Mobil;
+use App\Models\MobilFavorite;
+use App\Models\Pesanan;
 
 class DashboardProdukController extends Controller
 {
@@ -254,19 +256,27 @@ class DashboardProdukController extends Controller
         $nama_mobil = $request->input('nama_mobil');
         $data = Mobil::where('kode_mobil', $kode_mobil)->where('nama_mobil', $nama_mobil)->first();
 
-        if ($data) {
+        $mobil_favorit = MobilFavorite::where('kode_mobil', $kode_mobil)->count();
+        $pesanan = Pesanan::where('kode_mobil', $kode_mobil)->count();
 
-            if ($data->gambar_mobil) {
-                $gambar = public_path('/images/produk/' . $data->gambar_mobil);
+        if (($mobil_favorit > 0) || ($pesanan > 0)) {
+            return redirect()->back()->with('error', 'MOBIL TIDAK DAPAT DIHAPUS KARENA ADA PEMBELI YANG MEMFAVORITKAN / PESAN!');
+        } else {
 
-                if (file_exists($gambar)) {
-                    unlink($gambar);
+            if ($data) {
+    
+                if ($data->gambar_mobil) {
+                    $gambar = public_path('/images/produk/' . $data->gambar_mobil);
+    
+                    if (file_exists($gambar)) {
+                        unlink($gambar);
+                    }
                 }
+    
+                Mobil::where('kode_mobil', $kode_mobil)->delete();
+    
+                return redirect('/dashboard/produk');
             }
-
-            Mobil::where('kode_mobil', $kode_mobil)->delete();
-
-            return redirect('/dashboard/produk');
         }
     }
 

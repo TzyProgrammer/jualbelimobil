@@ -22,7 +22,7 @@
          <p class="text-xl ps-8 leading-7">{{$mobil->deskripsi_mobil}}</p>
          <p class="ps-8 font-black mt-8 text-3xl">{{$harga}}</p>
          <div class="flex flex-row ps-8 mt-20 mb-20">
-            <button type="submit" class=" w-64 text-white bg-red-700 hover:bg-red-700 focus:ring-4 focus:outline-1 focus:ring-primary-300 font-medium rounded-full text-xl px-5 py-2.5 text-center">BELI</button>
+            <a href="/checkout/{{$mobil->kode_mobil}}" class=" w-64 text-white bg-red-700 hover:bg-red-700 focus:ring-4 focus:outline-1 focus:ring-primary-300 font-medium rounded-full text-xl px-5 py-2.5 text-center">BELI</a>
             <form method="POST" action="{{ route('favorit') }}">
                @csrf
                <input type="hidden" name="kode_mobil" value="{{$mobil->kode_mobil}}">

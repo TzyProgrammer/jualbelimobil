@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Bulan Mei 2024 pada 16.24
+-- Waktu pembuatan: 30 Jun 2024 pada 16.43
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -28,8 +28,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `merek_mobil` (
-  `id_merek` int(11) NOT NULL,
-  `merek` varchar(30) NOT NULL
+  `kode_merek` int(11) NOT NULL,
+  `merek` varchar(30) NOT NULL,
+  `gambar` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -39,13 +40,12 @@ CREATE TABLE `merek_mobil` (
 --
 
 CREATE TABLE `mobil` (
-  `kode_mobil` varchar(10) NOT NULL,
-  `id_merek` int(11) NOT NULL,
+  `kode_mobil` int(11) NOT NULL,
+  `kode_merek` int(11) NOT NULL,
   `nama_mobil` varchar(50) DEFAULT NULL,
-  `jumlah_mobil` int(11) DEFAULT NULL,
   `harga_mobil` int(20) DEFAULT NULL,
   `gambar_mobil` varchar(50) DEFAULT NULL,
-  `deskripsi_mobil` varchar(255) DEFAULT NULL
+  `deskripsi_mobil` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -69,10 +69,11 @@ CREATE TABLE `mobil_favorit` (
 CREATE TABLE `pembeli` (
   `id_pembeli` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(30) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `nama_pembeli` varchar(50) NOT NULL,
   `nomor_hp` int(20) NOT NULL,
-  `foto_profil` varchar(50) NOT NULL
+  `alamat` text NOT NULL,
+  `foto_profil` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -84,8 +85,15 @@ CREATE TABLE `pembeli` (
 CREATE TABLE `penjual` (
   `id_penjual` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(30) NOT NULL
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `penjual`
+--
+
+INSERT INTO `penjual` (`id_penjual`, `username`, `password`) VALUES
+(1, 'admin', '$2y$12$M17SFuLLiH1rXasBPuSDvO360L5BVJQIYuVRXb1W.PGXb8ADZ0ZWm');
 
 -- --------------------------------------------------------
 
@@ -96,11 +104,10 @@ CREATE TABLE `penjual` (
 CREATE TABLE `pesanan` (
   `kode_pesanan` int(11) NOT NULL,
   `id_pembeli` int(11) NOT NULL,
-  `konfirmasi_pesanan` enum('ya','tidak') DEFAULT NULL,
+  `status_pesanan` enum('Menunggu','Dibatalkan','Dikirim','Selesai') DEFAULT NULL,
   `tanggal_pesan` date DEFAULT NULL,
   `kode_mobil` varchar(10) DEFAULT NULL,
-  `metode_pengiriman` enum('delivery','pickup') DEFAULT NULL,
-  `alamat` varchar(255) DEFAULT NULL
+  `metode_pengiriman` enum('Delivery','Pick Up') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -111,14 +118,14 @@ CREATE TABLE `pesanan` (
 -- Indeks untuk tabel `merek_mobil`
 --
 ALTER TABLE `merek_mobil`
-  ADD PRIMARY KEY (`id_merek`);
+  ADD PRIMARY KEY (`kode_merek`);
 
 --
 -- Indeks untuk tabel `mobil`
 --
 ALTER TABLE `mobil`
   ADD PRIMARY KEY (`kode_mobil`),
-  ADD KEY `id_merek` (`id_merek`);
+  ADD KEY `id_merek` (`kode_merek`);
 
 --
 -- Indeks untuk tabel `mobil_favorit`
@@ -154,25 +161,37 @@ ALTER TABLE `pesanan`
 -- AUTO_INCREMENT untuk tabel `merek_mobil`
 --
 ALTER TABLE `merek_mobil`
-  MODIFY `id_merek` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `kode_merek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+
+--
+-- AUTO_INCREMENT untuk tabel `mobil`
+--
+ALTER TABLE `mobil`
+  MODIFY `kode_mobil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+
+--
+-- AUTO_INCREMENT untuk tabel `mobil_favorit`
+--
+ALTER TABLE `mobil_favorit`
+  MODIFY `id_favorit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `pembeli`
 --
 ALTER TABLE `pembeli`
-  MODIFY `id_pembeli` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pembeli` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `penjual`
 --
 ALTER TABLE `penjual`
-  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `kode_pesanan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `kode_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
@@ -182,7 +201,7 @@ ALTER TABLE `pesanan`
 -- Ketidakleluasaan untuk tabel `mobil`
 --
 ALTER TABLE `mobil`
-  ADD CONSTRAINT `mobil_ibfk_1` FOREIGN KEY (`id_merek`) REFERENCES `merek_mobil` (`id_merek`);
+  ADD CONSTRAINT `mobil_ibfk_1` FOREIGN KEY (`kode_merek`) REFERENCES `merek_mobil` (`kode_merek`);
 
 --
 -- Ketidakleluasaan untuk tabel `mobil_favorit`

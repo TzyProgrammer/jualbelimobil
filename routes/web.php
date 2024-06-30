@@ -58,9 +58,9 @@ Route::prefix('dashboard')->middleware('authcheck')->group(function () {
 
     });
 
-    Route::get('/pesanan', function () {
-        return view('dashboard_pesanan');
-    });
+    Route::get('/pesanan', [DashboardPesananController::class, 'listPesanan']);
+
+    Route::post('/pesanan/{nomor_orderan}', [DashboardPesananController::class, 'updateStatusPesanan'])->name('update.status.pesanan');
     
     Route::get('/statistik', function () {
         return view('dashboard_statistik');
@@ -91,14 +91,10 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/pesanan', function () {
-    return view('pesanan');
-});
+Route::get('/pesanan', [ResiController::class , 'pesanan']);
 
-Route::get('/resi', function () {
-    return view('resi');
-});
+Route::get('/resi/{kode_pesanan}', [ResiController::class , 'detailPesanan']);
 
-Route::get('/checkout', function () {
-    return view('checkout');
-});
+Route::get('/checkout/{kode_mobil}', [CheckoutController::class , 'dataProduk']);
+
+Route::post('/checkout', [CheckoutController::class , 'checkout'])->name('checkout');
