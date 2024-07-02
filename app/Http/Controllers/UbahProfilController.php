@@ -30,7 +30,6 @@ class UbahProfilController extends Controller
     public function updateProfile(Request $request)
     {
         $request->validate([
-            'username' => 'required',
             'nama_pembeli' => 'nullable|string',
             'alamat' => 'nullable|string',
             'nomor_hp' => 'nullable|string',
@@ -44,7 +43,6 @@ class UbahProfilController extends Controller
             return redirect('/login')->with('fail', 'You have to login first.');
         }
 
-        $user->username = $request->input('username');
         $user->nama_pembeli = $request->input('nama_pembeli', $user->nama_pembeli);
         $user->alamat = $request->input('alamat', $user->alamat);
         $user->nomor_hp = $request->input('nomor_hp', $user->nomor_hp);

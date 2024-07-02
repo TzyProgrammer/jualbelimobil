@@ -1,5 +1,4 @@
 @extends('layout.main')
-
 @section('title', 'Ubah Profil')
 
 @section('content')
@@ -7,14 +6,10 @@
 <div class="flex flex-row">
   <div class="w-64 mt-16 mx-10 mr-28">
     <img src="{{ $user->foto_profil ? asset('images/fotoprofil/' . $user->foto_profil) : asset('images/profil.jpg') }}" alt="Profile Photo">
-    <label class="mt-3 ml-20 text-md text-gray-500 hover:text-red-300 cursor-pointer">
-        Unggah Foto
-        <input type="file" name="foto_profil" accept="image/jpeg,image/jpg,image/png" class="hidden">
-    </label>
   </div>
-
   <form action="{{ route('updateProfile') }}" method="POST" enctype="multipart/form-data" class="max-w-sm mx-24 mb-20 ml-20">
     @csrf
+    @method('PUT')
     <div class="mb-5">
       <label class="block mb-2 text-sm font-medium text-gray-900">Username</label>
       <input type="text" name="username" class="w-96 shadow-sm bg-red-50 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="Ubah username" value="{{ $user->username }}" disabled/>
