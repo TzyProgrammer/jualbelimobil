@@ -33,7 +33,7 @@ class UbahProfilController extends Controller
             'nama_pembeli' => 'nullable|string',
             'alamat' => 'nullable|string',
             'nomor_hp' => 'nullable|string',
-            'password' => 'nullable|string|min:8',
+            'password' => 'nullable|string|min:6',
             'foto_profil' => 'nullable|image|mimes:jpeg,jpg,png|max:2048',
         ]);
 
