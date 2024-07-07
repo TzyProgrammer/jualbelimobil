@@ -26,6 +26,7 @@ class DashboardPesananController extends Controller
                 $merek[] = MerekMobil::where('kode_merek', $data_mobil->kode_merek)->first()->merek;
                 $nama_mobil[] = $data_mobil->nama_mobil;
                 $harga[] = 'Rp' . number_format($data_mobil->harga_mobil, 2, ',', '.');
+                $no_hp[] = $data_pembeli->nomor_hp;
                 $metode_pengiriman[] = $pesanan->metode_pengiriman;
                 $status_pesanan[] = $pesanan->status_pesanan;
     
@@ -36,7 +37,7 @@ class DashboardPesananController extends Controller
                 }
             }
     
-            return view('dashboard_pesanan', compact('nomor_pesanan', 'tanggal_pesan', 'username', 'merek', 'nama_mobil', 'harga', 'metode_pengiriman', 'status_pesanan', 'alamat'));
+            return view('dashboard_pesanan', compact('nomor_pesanan', 'tanggal_pesan', 'username', 'merek', 'nama_mobil', 'harga', 'no_hp', 'metode_pengiriman', 'status_pesanan', 'alamat'));
         } else {
             return view('dashboard_pesanan');
         }

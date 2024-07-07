@@ -28,6 +28,9 @@
                     Harga
                 </th>
                 <th scope="col" class="px-6 py-3">
+                    No HP
+                </th>
+                <th scope="col" class="px-6 py-3">
                     Alamat
                 </th>
                 <th scope="col" class="px-6 py-3 text-center">
@@ -55,6 +58,9 @@
                     </td>
                     <td class="px-6 py-4">
                         {{ $harga[$index] }}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{ $no_hp[$index] }}
                     </td>
                     <td class="px-6 py-4">
                         {{ $alamat[$index] }}
